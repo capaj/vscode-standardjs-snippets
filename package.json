@@ -9,6 +9,9 @@
     "type": "git",
     "url": "git+https://github.com/capaj/vscode-standardjs-snippets.git"
   },
+  "engines": {
+    "vscode": "0.10.x"
+  },
   "author": "capajj@gmail.com",
   "license": "MIT",
   "bugs": {
