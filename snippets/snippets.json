@@ -287,32 +287,8 @@
 		"prefix": "imd",
 		"body": "import {$1} from '${2:module}'"
 	},
-	"String": {
-		"prefix": "S",
-		"body": "String"
-	},
-	"Number": {
-		"prefix": "N",
-		"body": "Number"
-	},
-	"Object": {
-		"prefix": "O",
-		"body": "Object"
-	},
-	"Array": {
-		"prefix": "A",
-		"body": "Array"
-	},
-	"Date": {
-		"prefix": "D",
-		"body": "Date"
-	},
-	"RegExp": {
-		"prefix": "Rx",
-		"body": "RegExp"
-	},
 	"typeof": {
-		"prefix": "tof",
+		"prefix": "t",
 		"body": "typeof ${1:source} === '${2:undefined}'"
 	},
 	"instanceof": {
@@ -407,7 +383,7 @@
 		"prefix": "afb",
 		"body": "(${1:arguments}) => {\n\t${0}\n}"
 	},
-	"generator": {
+	"generator function": {
 		"prefix": "gf",
 		"body": "function* (${1:arguments}) {\n\t${0}\n}"
 	},
