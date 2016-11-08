@@ -224,7 +224,7 @@
 		"body": "var ${1:name}"
 	},
 	"var assignment": {
-		"prefix": "v=",
+		"prefix": "va",
 		"body": "var ${1:name} = ${2:value}"
 	},
 	"let statement": {
@@ -232,7 +232,7 @@
 		"body": "let ${1:name}"
 	},
 	"let assignment": {
-		"prefix": "l=",
+		"prefix": "la",
 		"body": "let ${1:name} = ${2:value}"
 	},
 	"const statement": {
@@ -240,7 +240,7 @@
 		"body": "const ${1:name}"
 	},
 	"const assignment": {
-		"prefix": "c=",
+		"prefix": "ca",
 		"body": "const ${1:name} = ${2:value}"
 	},
 	"const assignment yielded": {
@@ -323,12 +323,12 @@
 		"prefix": "ia",
 		"body": "Array.isArray(${1:source})"
 	},
-  "let and if statement": {
+	"let and if statement": {
 		"prefix": "lif",
 		"body": "let ${0} \n if (${2:condition}) {\n\t${1}\n}"
 	},
 	"if statement": {
-		"prefix": "if",
+		"prefix": "i",
 		"body": "if (${1:condition}) {\n\t${0}\n}"
 	},
 	"else statement": {
