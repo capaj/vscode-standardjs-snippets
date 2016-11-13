@@ -81,7 +81,7 @@ const ${1:name} = yield ${2:value}
 
 ### Flow Control
 
-#### `if⇥` if statement
+#### `i⇥` if statement
 ```js
 if (${1:condition}) {
   ${0}
@@ -412,15 +412,6 @@ return new Promise((resolve, reject) => {
   ${0}
 })
 ```
-
-### Types
-
-#### `S⇥` String
-#### `N⇥` Number
-#### `O⇥` Object
-#### `A⇥` Array
-#### `D⇥` Date
-#### `Rx⇥` RegExp
 
 #### `tof⇥` typeof comparison
 ```js
