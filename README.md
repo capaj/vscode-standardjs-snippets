@@ -396,16 +396,6 @@ return true
 return false
 ```
 
-#### `r0⇥` return 0
-```js
-return 0
-```
-
-#### `r-1⇥` return -1
-```js
-return -1
-```
-
 #### `rp⇥` return Promise (ES6)
 ```js
 return new Promise((resolve, reject) => {
@@ -683,20 +673,6 @@ module.exports = ${1:name}
 ${1:emitter}.on('${2:event}', (${3:arguments}) => {
   ${0}
 })
-```
-
-#### `xm⇥` Express middleware
-```js
-function (req, res${1:, next}) {
-  ${0}
-}
-```
-
-#### `xerr⇥` Express error handler
-```js
-function (err, req, res, next) {
-  ${0}
-}
 ```
 
 ### Miscellaneous
