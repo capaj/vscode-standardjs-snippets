@@ -44,7 +44,7 @@ For example, `.fe` renders a chain-friendly version of the "forEach" snippet, wh
 var ${1:name}
 ```
 
-#### `v=⇥` var assignment
+#### `va⇥` var assignment
 ```js
 var ${1:name} = ${2:value}
 ```
@@ -54,7 +54,7 @@ var ${1:name} = ${2:value}
 let ${1:name}
 ```
 
-#### `l=⇥` let assignment
+#### `la⇥` let assignment
 ```js
 let ${1:name} = ${2:value}
 ```
@@ -69,7 +69,7 @@ let ${1:name} = yield ${2:value}
 const ${1:name}
 ```
 
-#### `c=⇥` const assignment
+#### `ca⇥` const assignment
 ```js
 const ${1:name} = ${2:value}
 ```
