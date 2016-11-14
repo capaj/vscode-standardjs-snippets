@@ -81,7 +81,7 @@ const ${1:name} = yield ${2:value}
 
 ### Flow Control
 
-#### `i⇥` if statement
+#### `if⇥` if statement
 ```js
 if (${1:condition}) {
   ${0}
@@ -301,7 +301,7 @@ class ${1:name} {
 }
 ```
 
-#### `csx⇥` child class (ES6)
+#### `csx⇥` extend a class (ES6)
 ```js
 class ${1:name} extends ${2:base} {
   constructor(${2:arguments}) {
@@ -323,31 +323,31 @@ JSON:
 
 #### `m⇥` method (ES6 syntax)
 ```js
-${1:method}(${2:arguments}) {
+${1:method} (${2:arguments}) {
   ${0}
 }
 ```
 
 #### `get⇥` getter (ES6 syntax)
 ```js
-get ${1:property}() {
+get ${1:property} () {
   ${0}
 }
 ```
 
 #### `set⇥` setter (ES6 syntax)
 ```js
-set ${1:property}(${2:value}) {
+set ${1:property} (${2:value}) {
   ${0}
 }
 ```
 
 #### `gs⇥` getter and setter (ES6 syntax)
 ```js
-get ${1:property}() {
+get ${1:property} () {
   ${0}
 }
-set ${1:property}(${2:value}) {
+set ${1:property} (${2:value}) {
 
 }
 ```
@@ -371,7 +371,7 @@ Object.assign(${1:dest}, ${2:source})
 
 ### Returning values
 
-#### `r⇥` return
+#### `re⇥` return
 ```js
 return ${0}
 ```
@@ -443,27 +443,27 @@ ${1:promise}.catch((${2:err}) => {
 
 ### ES6 modules
 
-#### `ex⇥` module export
+#### `e⇥` module export
 ```js
 export ${1:member}
 ```
 
-#### `exd⇥` module default export
+#### `ed⇥` module default export
 ```js
 export default ${1:member}
 ```
 
-#### `im⇥` module import
+#### `i⇥` module import
 ```js
 import ${1:*} from '${2:module}'
 ```
 
-#### `ima⇥` module import as
+#### `ia⇥` module import as
 ```js
 import ${1:*} as ${2:name} from '${3:module}'
 ```
 
-#### `imd⇥` module import destructuring
+#### `id⇥` module import destructuring
 ```js
 import {$1} from '${2:module}'
 ```
@@ -615,7 +615,7 @@ ${1:document}.classList.add('${2:class}');
 ${1:document}.classList.toggle('${2:class}');
 ```
 
-### `cr⇥` classList.remove
+### `clr⇥` classList.remove
 
 ```js
 ${1:document}.classList.remove('${2:class}');
@@ -649,11 +649,11 @@ function (err, ${1:value}) {
 }
 ```
 
-#### `re⇥` require a module
+#### `r⇥` require a module
 ```js
 require('${1:module}')
 ```
-#### `cre⇥` require and assign a module
+#### `cr⇥` require and assign a module
 ```js
 const ${1:module} = require('${1:module}')
 ```

@@ -19,8 +19,24 @@
 		"prefix": "cb",
 		"body": "function (err, ${1:value}) {\n\tif (err) throw err\n\t${0}\n}"
 	},
+	"Promise.all": {
+		"prefix": "pra",
+		"body": "Promise.all([${1:value}])"
+	},
+	"Promise.resolve": {
+		"prefix": "prs",
+		"body": "Promise.resolve(${1:value})"
+	},
+	"Promise.reject": {
+		"prefix": "prj",
+		"body": "Promise.reject(${1:value})"
+	},	
 	"Promise": {
 		"prefix": "p",
+		"body": "Promise"
+	},
+	"new Promise": {
+		"prefix": "np",
 		"body": "new Promise((resolve, reject) => {\n\t${0}\n})"
 	},
 	"Promise.then": {
@@ -68,11 +84,11 @@
 		"body": "afterEach(function () {\n\t${0}\n})"
 	},
 	"require": {
-		"prefix": "re",
+		"prefix": "r",
 		"body": "require('${1:module}')"
 	},
 	"const module = require('module')": {
-		"prefix": "cre",
+		"prefix": "cr",
 		"body": "const ${1:module} = require('${1:module}')"
 	},
 	"exports.member": {
@@ -136,7 +152,7 @@
 		"body": "${1:el}.classList.add('${2:class}')"
 	},
 	"classList.remove": {
-		"prefix": "cr",
+		"prefix": "clr",
 		"body": "${1:el}.classList.remove('${2:class}')"
 	},
 	"classList.toggle": {
@@ -268,23 +284,23 @@
 		"body": "class ${1:name} extends ${2:base} {\n\tconstructor(${3:arguments}) {\n\t\tsuper(${3:arguments});\n\t\t${0}\n\t}\n}"
 	},
 	"module export": {
-		"prefix": "ex",
+		"prefix": "e",
 		"body": "export ${1:member}"
 	},
 	"module default export": {
-		"prefix": "exd",
+		"prefix": "ed",
 		"body": "export default ${1:member}"
 	},
 	"import module": {
-		"prefix": "im",
+		"prefix": "i",
 		"body": "import ${1:*} from '${2:module}'"
 	},
 	"import module as": {
-		"prefix": "ima",
+		"prefix": "ia",
 		"body": "import ${1:*} as ${2:name} from '${3:module}'"
 	},
 	"import module destructured": {
-		"prefix": "imd",
+		"prefix": "id",
 		"body": "import {$1} from '${2:module}'"
 	},
 	"typeof": {
@@ -304,7 +320,7 @@
 		"body": "let ${0} \n if (${2:condition}) {\n\t${1}\n}"
 	},
 	"if statement": {
-		"prefix": "i",
+		"prefix": "if",
 		"body": "if (${1:condition}) {\n\t${0}\n}"
 	},
 	"else statement": {
@@ -421,19 +437,19 @@
 	},
 	"method": {
 		"prefix": "m",
-		"body": "${1:method}(${2:arguments}) {\n\t${0}\n}"
+		"body": "${1:method} (${2:arguments}) {\n\t${0}\n}"
 	},
 	"getter": {
 		"prefix": "get",
-		"body": "get ${1:property}() {\n\t${0}\n}"
+		"body": "get ${1:property} () {\n\t${0}\n}"
 	},
 	"setter": {
 		"prefix": "set",
-		"body": "set ${1:property}(${2:value}) {\n\t${0}\n}"
+		"body": "set ${1:property} (${2:value}) {\n\t${0}\n}"
 	},
 	"getter + setter": {
 		"prefix": "gs",
-		"body": "get ${1:property}() {\n\t${0}\n}\nset ${1:property}(${2:value}) {\n\t\n}"
+		"body": "get ${1:property} () {\n\t${0}\n}\nset ${1:property} (${2:value}) {\n\t\n}"
 	},
 	"prototype method": {
 		"prefix": "proto",
@@ -452,7 +468,7 @@
 		"body": "Object.keys(${1:obj})"
 	},
 	"return": {
-		"prefix": "r",
+		"prefix": "re",
 		"body": "return ${0}"
 	},
 	"yield": {
