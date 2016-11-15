@@ -68,6 +68,10 @@ let ${1:name} = yield ${2:value}
 ```js
 const ${1:name}
 ```
+#### `cd⇥` const from destructuring
+```js
+const {${1:name}} = ${2:value}
+```
 
 #### `ca⇥` const assignment
 ```js

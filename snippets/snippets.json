@@ -255,6 +255,10 @@
 		"prefix": "c",
 		"body": "const ${1:name}"
 	},
+	"const statement from destructuring": {
+		"prefix": "cd",
+		"body": "const {${1:name}} = {2:value}"
+	},
 	"const assignment": {
 		"prefix": "ca",
 		"body": "const ${1:name} = ${2:value}"
