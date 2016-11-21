@@ -43,17 +43,9 @@
 		"prefix": "then",
 		"body": "${1:promise}.then((${2:value}) => {\n\t${0}\n})"
 	},
-	"chain then": {
-		"prefix": ".then",
-		"body": ".then((${1:value}) => {${0}})"
-	},
 	"Promise.catch": {
 		"prefix": "catch",
 		"body": "${1:promise}.catch(${2:err} => {\n\t${0}\n})"
-	},
-	"chain catch": {
-		"prefix": ".catch",
-		"body": ".catch((${1:err}) => {${0}})"
 	},
 	"describe": {
 		"prefix": "desc",
@@ -106,10 +98,6 @@
 	"event handler": {
 		"prefix": "on",
 		"body": "${1:emitter}.on('${2:event}', (${3:arguments}) => {\n\t${0}\n});"
-	},
-	"chain event handler": {
-		"prefix": ".on",
-		"body": ".on('${2:event}', (${3:arguments}) => {${0}})"
 	},
 	"addEventListener": {
 		"prefix": "ae",
@@ -183,57 +171,29 @@
 		"prefix": "fe",
 		"body": "${1:iterable}.forEach((${2:item}) => {\n\t${0}\n})"
 	},
-	"chain forEach": {
-		"prefix": ".fe",
-		"body": ".forEach((${1:item}) => {${0}})"
-	},
 	"map": {
 		"prefix": "map",
 		"body": "${1:iterable}.map((${2:item}) => {\n\t${0}\n})"
-	},
-	"chain map": {
-		"prefix": ".map",
-		"body": ".map((${1:item}) => {${0}})"
 	},
 	"reduce": {
 		"prefix": "reduce",
 		"body": "${1:iterable}.reduce((${2:previous}, ${3:current}) => {\n\t${0}\n}${4:, initial})"
 	},
-	"chain reduce": {
-		"prefix": ".reduce",
-		"body": ".reduce((${1:previous}, ${2:current}) => {${0}}${4:, initial})"
-	},
 	"filter": {
 		"prefix": "filter",
 		"body": "${1:iterable}.filter((${2:item}) => {\n\t${0}\n})"
-	},
-	"chain filter": {
-		"prefix": ".filter",
-		"body": ".filter((${1:item}) => {${0}})"
 	},
 	"find": {
 		"prefix": "find",
 		"body": "${1:iterable}.find((${2:item}) => {\n\t${0}\n})"
 	},
-	"chain find": {
-		"prefix": ".find",
-		"body": ".find((${1:item}) => {${0}})"
-	},
 	"every": {
 		"prefix": "every",
 		"body": "${1:iterable}.every((${2:item}) => {\n\t${0}\n})"
 	},
-	"chain every": {
-		"prefix": ".every",
-		"body": ".every((${1:item}) => {${0}})"
-	},
 	"some": {
 		"prefix": "some",
 		"body": "${1:iterable}.some((${2:item}) => {\n\t${0}\n})"
-	},
-	"chain some": {
-		"prefix": ".some",
-		"body": ".some((${1:item}) => {${0}})"
 	},
 	"var statement": {
 		"prefix": "v",
@@ -296,7 +256,7 @@
 		"body": "export default ${1:member}"
 	},
 	"import module": {
-		"prefix": "i",
+		"prefix": "im",
 		"body": "import ${1:*} from '${2:module}'"
 	},
 	"import module as": {
@@ -324,7 +284,7 @@
 		"body": "let ${0} \n if (${2:condition}) {\n\t${1}\n}"
 	},
 	"if statement": {
-		"prefix": "if",
+		"prefix": "i",
 		"body": "if (${1:condition}) {\n\t${0}\n}"
 	},
 	"else statement": {
@@ -458,10 +418,6 @@
 	"prototype method": {
 		"prefix": "proto",
 		"body": "${1:Class}.prototype.${2:method} = function (${3:arguments}) {\n\t${0}\n}"
-	},
-	"chain prototype method": {
-		"prefix": ".proto",
-		"body": ".prototype.${2:methodName} = function (${3:arguments}) {\n\t${0}\n}"
 	},
 	"Object.assign": {
 		"prefix": "oa",

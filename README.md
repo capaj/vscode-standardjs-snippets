@@ -17,9 +17,7 @@ __Yes!, no semicolons:__
 
 ## Snippets
 
-Snippets are optimized to be short and easy to remember. Some snippets are "chainable" and render differently when preceded by a "."
-
-For example, `.fe` renders a chain-friendly version of the "forEach" snippet, while `fe` renders a full code block.
+Snippets are optimized to be short and easy to remember.
 
 - [declarations](#declarations)
 - [flow control](#flow-control)
@@ -85,7 +83,7 @@ const ${1:name} = yield ${2:value}
 
 ### Flow Control
 
-#### `if⇥` if statement
+#### `i⇥` if statement
 ```js
 if (${1:condition}) {
   ${0}
@@ -457,7 +455,7 @@ export ${1:member}
 export default ${1:member}
 ```
 
-#### `i⇥` module import
+#### `im⇥` module import
 ```js
 import ${1:*} from '${2:module}'
 ```
