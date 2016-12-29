@@ -537,7 +537,7 @@ setTimeout(() => {
 }, ${1:delay})
 ```
 
-#### `sim⇥` setInterval
+#### `sim⇥` setImmediate
 ```js
 setImmediate(() => {
   ${0}

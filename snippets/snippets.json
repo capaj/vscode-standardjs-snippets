@@ -257,7 +257,10 @@
 	},
 	"const statement from destructuring": {
 		"prefix": "cd",
-		"body": "const {${1:name}} = {2:value}"
+		"body": [
+			"const {${1:name}} = ${2:value}",
+			"$0"
+		]
 	},
 	"const assignment": {
 		"prefix": "ca",
@@ -276,7 +279,7 @@
 		"body": "const ${1:name} = {\n\t${0}\n}"
 	},
 	"const array": {
-		"prefix": "ca",
+		"prefix": "car",
 		"body": "const ${1:name} = [\n\t${0}\n]"
 	},
 	"class": {
@@ -355,6 +358,10 @@
 		"prefix": "wl",
 		"body": "while (${1:condition}) {\n\t${0}\n}"
 	},
+	"throw new Error": {
+		"prefix": "tn",
+		"body": "throw new ${0:error}"
+	}
 	"try/catch": {
 		"prefix": "tc",
 		"body": "try {\n\t${0}\n} catch (${1:err}) {\n\t\n}"
