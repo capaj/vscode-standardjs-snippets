@@ -380,7 +380,7 @@ Object.assign(${1:dest}, ${2:source})
 return ${0}
 ```
 
-#### `rth⇥` return this
+#### `rt⇥` return this
 ```js
 return this
 ```
@@ -390,14 +390,18 @@ return this
 return null
 ```
 
-#### `rt⇥` return true
+#### `ro⇥` return new object
 ```js
-return true
+return {
+  ${0}
+}
 ```
 
-#### `rf⇥` return false
+#### `ro⇥` return new array
 ```js
-return false
+return [
+  ${0}
+]
 ```
 
 #### `rp⇥` return Promise (ES6)

@@ -299,7 +299,7 @@
 		"body": "export default ${1:member}"
 	},
 	"import module": {
-		"prefix": "i",
+		"prefix": "im",
 		"body": "import ${1:*} from '${2:module}'"
 	},
 	"import module as": {
@@ -327,7 +327,7 @@
 		"body": "let ${0} \n if (${2:condition}) {\n\t${1}\n}"
 	},
 	"if statement": {
-		"prefix": "if",
+		"prefix": "i",
 		"body": "if (${1:condition}) {\n\t${0}\n}"
 	},
 	"else statement": {
@@ -361,7 +361,7 @@
 	"throw new Error": {
 		"prefix": "tn",
 		"body": "throw new ${0:error}"
-	}
+	},
 	"try/catch": {
 		"prefix": "tc",
 		"body": "try {\n\t${0}\n} catch (${1:err}) {\n\t\n}"
@@ -487,12 +487,20 @@
 		"body": "yield ${0}"
 	},
 	"return this": {
-		"prefix": "rth",
+		"prefix": "rt",
 		"body": "return this"
 	},
 	"return null": {
 		"prefix": "rn",
 		"body": "return null"
+	},
+	"return new object": {
+		"prefix": "ro",
+		"body": "return {\n\t${0}\n}"
+	},	
+	"return new array": {
+		"prefix": "ra",
+		"body": "return [\n\t${0}\n]"
 	},
 	"return promise": {
 		"prefix": "rp",
