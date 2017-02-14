@@ -324,15 +324,6 @@ class ${1:name} extends ${2:base} {
 }
 ```
 
-#### `:⇥` key/value pair
-Javascript:
-```js
-${1:key}: ${2:'value'}
-```
-JSON:
-```json
-"${1:key}": ${2:"value"}
-```
 
 #### `m⇥` method (ES6 syntax)
 ```js
@@ -384,7 +375,7 @@ Object.assign(${1:dest}, ${2:source})
 
 ### Returning values
 
-#### `re⇥` return
+#### `r⇥` return
 ```js
 return ${0}
 ```
@@ -666,7 +657,7 @@ function (err, ${1:value}) {
 }
 ```
 
-#### `r⇥` require a module
+#### `rq⇥` require a module
 ```js
 require('${1:module}')
 ```

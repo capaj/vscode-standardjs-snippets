@@ -84,7 +84,7 @@
 		"body": "afterEach(function () {\n\t${0}\n})"
 	},
 	"require": {
-		"prefix": "r",
+		"prefix": "rq",
 		"body": "require('${1:module}')"
 	},
 	"const module = require('module')": {
@@ -446,10 +446,6 @@
 		"prefix": "jp",
 		"body": "JSON.parse($0)"
 	},
-	"key/value pair": {
-		"prefix": ":",
-		"body": "${1:key}: ${2:'value'}"
-	},
 	"method": {
 		"prefix": "m",
 		"body": "${1:method} (${2:arguments}) {\n\t${0}\n}"
@@ -483,7 +479,7 @@
 		"body": "Object.keys(${1:obj})"
 	},
 	"return": {
-		"prefix": "re",
+		"prefix": "r",
 		"body": "return ${0}"
 	},
 	"yield": {
