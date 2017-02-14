@@ -430,6 +430,10 @@
 		"prefix": "cw",
 		"body": "console.warn(${0})"
 	},
+	"constructor": {
+		"prefix": "cn",
+		"body": "constructor () {\n\t${0}\n}"
+	},
 	"use strict": {
 		"prefix": "us",
 		"body": "'use strict'"

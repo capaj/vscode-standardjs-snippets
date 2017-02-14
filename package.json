@@ -3,7 +3,7 @@
   "displayName": "JavaScript standardjs styled snippets",
   "publisher": "capaj",
   "icon": "images/javascript.png",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "standardjs styled javascript snippets for visual studio code",
   "repository": {
     "type": "git",

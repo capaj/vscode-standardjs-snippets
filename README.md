@@ -15,6 +15,15 @@ __Yes!, no semicolons:__
 - [JavaScript Semicolon Insertion - Everything You Need to Know](http://inimino.org/~inimino/blog/javascript_semicolons)
 
 
+## Making the snippets to priority
+
+I certainly prefer snippets to have the top priority in the autocompletion. This is not a default settingm but can be enabled by:
+
+```
+"editor.snippetSuggestions": "top",
+```
+in your settings.json. Otherwise vscode prefers keywords on the top.
+
 ## Snippets
 
 Snippets are optimized to be short and easy to remember. Some snippets are "chainable" and render differently when preceded by a "."
