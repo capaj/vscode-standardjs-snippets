@@ -368,9 +368,26 @@ ${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {
 Object.keys(${1:obj})
 ```
 
+#### `oc` Object.create
+```js
+Object.create(${1:obj})
+```
+
 #### `oa` Object.assign
 ```js
 Object.assign(${1:dest}, ${2:source})
+```
+
+#### `og` Object.getOwnPropertyDescriptor
+```js
+Object.getOwnPropertyDescriptor(${1:dest}, '${2:prop}')
+```
+
+#### `od` Object.defineProperty
+```js
+Object.defineProperty(${1:dest}, '${2:prop}', {
+  ${0}
+})
 ```
 
 ### Returning values

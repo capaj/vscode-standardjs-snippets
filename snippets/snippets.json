@@ -474,6 +474,18 @@
 		"prefix": "oa",
 		"body": "Object.assign(${1:dest}, ${2:source})"
 	},
+	"Object.create": {
+		"prefix": "oc",
+		"body": "Object.create(${1:obj})"
+	},		
+	"Object.getOwnPropertyDescriptor": {
+		"prefix": "og",
+		"body": "Object.getOwnPropertyDescriptor(${1:obj}, '${2:prop}')"
+	},	
+	"Object.defineProperty": {
+		"prefix": "od",
+		"body": "Object.defineProperty(${1:dest}, '${2:prop}', {\n\t${0}\n})"
+	},
 	"Object.keys": {
 		"prefix": "ok",
 		"body": "Object.keys(${1:obj})"
