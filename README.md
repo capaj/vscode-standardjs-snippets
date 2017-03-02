@@ -414,7 +414,7 @@ return {
 }
 ```
 
-#### `ro⇥` return new array
+#### `ra⇥` return new array
 ```js
 return [
   ${0}
@@ -604,61 +604,61 @@ ${1:document}.querySelector('${2:selector}')
 Array.from(${1:document}.querySelectorAll('${2:selector}'))
 ```
 
-### `cdf⇥` createDocumentFragment
+#### `cdf⇥` createDocumentFragment
 
 ```js
 ${1:document}.createDocumentFragment(${2:elem});
 ```
 
-### `cel⇥` createElement
+#### `cel⇥` createElement
 
 ```js
 ${1:document}.createElement(${2:elem});
 ```
 
-### `ac⇥` appendChild
+#### `ac⇥` appendChild
 
 ```js
 ${1:document}.appendChild(${2:elem});
 ```
 
-### `rc⇥` removeChild
+#### `rc⇥` removeChild
 
 ```js
 ${1:document}.removeChild(${2:elem});
 ```
 
-### `cla⇥` classList.add
+#### `cla⇥` classList.add
 
 ```js
 ${1:document}.classList.add('${2:class}');
 ```
 
-### `ct⇥` classList.toggle
+#### `ct⇥` classList.toggle
 
 ```js
 ${1:document}.classList.toggle('${2:class}');
 ```
 
-### `clr⇥` classList.remove
+#### `clr⇥` classList.remove
 
 ```js
 ${1:document}.classList.remove('${2:class}');
 ```
 
-### `ga⇥` getAttribute
+#### `ga⇥` getAttribute
 
 ```js
 ${1:document}.getAttribute('${2:attr}');
 ```
 
-### `sa⇥` setAttribute
+#### `sa⇥` setAttribute
 
 ```js
 ${1:document}.setAttribute('${2:attr}', ${3:value});
 ```
 
-### `ra⇥` removeAttribute
+#### `ra⇥` removeAttribute
 
 ```js
 ${1:document}.removeAttribute('${2:attr}');
