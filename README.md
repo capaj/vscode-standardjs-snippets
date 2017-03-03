@@ -1,5 +1,5 @@
 # vscode-standardjs-snippets
-same snippets as https://github.com/gaboesquivel/atom-standardjs-snippets but for Visual Studio Code
+originally forked from https://github.com/gaboesquivel/atom-standardjs-snippets, but we've added couple more. Also these are not using special characters because vscode doesn't like them in the snippets.
 
 ## Standard JavaScript Snippets for Visual studio code
 
