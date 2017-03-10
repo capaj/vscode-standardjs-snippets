@@ -15,7 +15,7 @@ __Yes!, no semicolons:__
 - [JavaScript Semicolon Insertion - Everything You Need to Know](http://inimino.org/~inimino/blog/javascript_semicolons)
 
 
-## Making the snippets to priority
+## Making the snippets top priority
 
 I certainly prefer snippets to have the top priority in the autocompletion. This is not a default settingm but can be enabled by:
 
