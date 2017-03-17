@@ -26,7 +26,7 @@ in your settings.json. Otherwise vscode prefers keywords on the top.
 
 ## Snippets
 
-Snippets are optimized to be short and easy to remember.
+Snippets are optimized to be short and easy to remember. Note that these links work only on github, not on VSCode marketplace:
 
 - [declarations](#declarations)
 - [flow control](#flow-control)
