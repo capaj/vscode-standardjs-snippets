@@ -476,6 +476,16 @@ export ${1:member}
 export default ${1:member}
 ```
 
+#### `edf⇥` module default export function
+```js
+export default function ${1:name} (${2:arguments}) {\n\t${0}\n}
+
+```
+#### `ec⇥` module export const
+```js
+export const ${1:member} = ${2:value}
+```
+
 #### `im⇥` module import
 ```js
 import ${1:*} from '${2:module}'
