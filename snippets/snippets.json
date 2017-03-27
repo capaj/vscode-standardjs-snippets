@@ -92,8 +92,8 @@
 		"body": "module.exports = ${1:name}"
 	},
 	"module as class": {
-		"prefix": "mc",
-		"body": "var ${1:name} = (function () {\n\tfunction ${1:name}(${2:arguments}) {\n\t\t${0}\n\t}\n\treturn ${1:name}\n})();\n\nmodule.exports = ${1:name}"
+		"prefix": "mec",
+		"body": "class ${1:name} {\n\tconstructor (${2:arguments}) {\n\t\t${0}\n\t}\n}\n\nmodule.exports = ${1:name}\n"
 	},
 	"event handler": {
 		"prefix": "on",
@@ -244,11 +244,11 @@
 	},
 	"class": {
 		"prefix": "cs",
-		"body": "class ${1:name} {\n\tconstructor(${2:arguments}) {\n\t\t${0}\n\t}\n}"
+		"body": "class ${1:name} {\n\tconstructor (${2:arguments}) {\n\t\t${0}\n\t}\n}"
 	},
 	"class extends": {
 		"prefix": "csx",
-		"body": "class ${1:name} extends ${2:base} {\n\tconstructor(${3:arguments}) {\n\t\tsuper(${3:arguments});\n\t\t${0}\n\t}\n}"
+		"body": "class ${1:name} extends ${2:base} {\n\tconstructor (${3:arguments}) {\n\t\tsuper(${3:arguments})\n\t\t${0}\n\t}\n}"
 	},
 	"module export": {
 		"prefix": "e",
