@@ -99,6 +99,10 @@
 		"prefix": "on",
 		"body": "${1:emitter}.on('${2:event}', (${3:arguments}) => {\n\t${0}\n});"
 	},
+	"dom event cancel default and propagation": {
+		"prefix": "evc",
+		"body": "ev.preventDefault()\nev.stopPropagation()\nreturn false"
+	},
 	"addEventListener": {
 		"prefix": "ae",
 		"body": "${1:document}.addEventListener('${2:event}', ${3:ev} => {\n\t${0}\n})"

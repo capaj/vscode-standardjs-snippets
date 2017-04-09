@@ -587,6 +587,14 @@ ${1:document}.addEventListener('${2:event}', ${3:ev} => {
 ${1:document}.removeEventListener('${2:event}', ${3:listener})
 ```
 
+#### `evc` dom event cancel default and propagation
+```js
+ev.preventDefault()
+ev.stopPropagation()
+return false
+```
+
+
 #### `gi⇥` getElementById
 ```js
 ${1:document}.getElementById('${2:id}')
