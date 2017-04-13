@@ -326,6 +326,10 @@
 		"prefix": "fo",
 		"body": "for (let ${1:key} of ${2:source}) {\n\t${0}\n}"
 	},
+	"while iteration decrementing": {
+		"prefix": "wid",
+		"body": "let ${1:array}Index = ${1:array}.length\nwhile (${1:array}Index--) {\n\t${0}\n}"
+	},
 	"while loop": {
 		"prefix": "wl",
 		"body": "while (${1:condition}) {\n\t${0}\n}"

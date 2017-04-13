@@ -152,6 +152,14 @@ while (${1:condition}) {
 }
 ```
 
+#### `wid⇥` while iteration decrementing
+```js
+let ${1:array}Index = ${1:array}.length
+while (${1:array}Index--) {
+  ${0}
+}
+```
+
 #### `tc⇥` try/catch
 ```js
 try {
