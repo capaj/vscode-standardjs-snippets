@@ -210,6 +210,13 @@ async function (${1:arguments}) {
 }
 ```
 
+#### `asa⇥` async arrow function
+```js
+async (${1:arguments}) => {
+  ${0}
+}
+```
+
 #### `iife⇥` immediately-invoked function expression (IIFE)
 ```js
 ;(function (${1:arguments}) {
