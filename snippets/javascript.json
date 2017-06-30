@@ -56,7 +56,7 @@
 		"body": "it('${1:description}', function (done) {\n\t${0}\n})"
 	},
 	"it synchronous": {
-		"prefix": "its",
+		"prefix": "it",
 		"body": "it('${1:description}', function () {\n\t${0}\n})"
 	},
 	"mocha before": {
@@ -211,10 +211,6 @@
 		"prefix": "l",
 		"body": "let ${1:name}"
 	},
-	"let assignment": {
-		"prefix": "la",
-		"body": "let ${1:name} = ${2:value}"
-	},
 	"const statement": {
 		"prefix": "c",
 		"body": "const ${1:name}"
@@ -226,9 +222,13 @@
 			"$0"
 		]
 	},
-	"const assignment": {
+	"const assignment awaited": {
 		"prefix": "ca",
-		"body": "const ${1:name} = ${2:value}"
+		"body": "const ${1:name} = await ${2:value}"
+	},
+	"let assignment awaited": {
+		"prefix": "la",
+		"body": "let ${1:name} = await ${2:value}"
 	},
 	"const assignment yielded": {
 		"prefix": "cy",

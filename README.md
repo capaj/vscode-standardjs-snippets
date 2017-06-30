@@ -61,9 +61,9 @@ var ${1:name} = ${2:value}
 let ${1:name}
 ```
 
-#### `la⇥` let assignment
+#### `la⇥` let assignment awaited
 ```js
-let ${1:name} = ${2:value}
+let ${1:name} = await ${2:value}
 ```
 
 #### `ly⇥` let yielded assignment
@@ -80,9 +80,9 @@ const ${1:name}
 const {${1:name}} = ${2:value}
 ```
 
-#### `ca⇥` const assignment
+#### `ca⇥` const assignment awaited
 ```js
-const ${1:name} = ${2:value}
+const ${1:name} = await ${2:value}
 ```
 
 #### `cy⇥` const yielded assignment
@@ -524,7 +524,7 @@ describe('${1:description}', function () {
   ${0}
 })
 ```
-#### `its⇥` synchronous "it"
+#### `it⇥` synchronous "it"
 ```js
 it('${1:description}', function () {
   ${0}
@@ -769,6 +769,79 @@ console.error(${0})
 ```js
 console.warn(${0})
 ```
+
+## React snippets
+
+### Supported languages (file extensions)
+* JavaScript (.js)
+* TypeScript (.ts)
+* JavaScript React (.jsx)
+* TypeScript React (.tsx)
+
+These were taken from https://github.com/TimonVS/vscode-react-standard because the maintainer wasn't able to publish a new version for months even when there was a considerable flaw in the released version.
+Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
+
+| Trigger  | Content |
+| -------: | ------- |
+| `rcc→`   | class component skeleton |
+| `rccp→`  | class component skeleton with prop types after the class |
+| `rcjc→`  | class component skeleton without import and default export lines |
+| `rcfc→`  | class component skeleton that contains all the lifecycle methods |
+| `rsc→`   | stateless component skeleton |
+| `rscp→`  | stateless component with prop types skeleton |
+| `rpt→`   | empty propTypes declaration |
+| `con→`   | class default constructor with props|
+| `conc→`  | class default constructor with props and context |
+| `est→`   | empty state object |
+| `cwm→`   | `componentWillMount method` |
+| `cdm→`   | `componentDidMount method` |
+| `cwr→`   | `componentWillReceiveProps method` |
+| `scu→`   | `shouldComponentUpdate method` |
+| `cwup→`  | `componentWillUpdate method` |
+| `cdup→`  | `componentDidUpdate method` |
+| `cwun→`  | `componentWillUnmount method` |
+| `ren→`   | `render method` |
+| `sst→`   | `this.setState with object as parameter` |
+| `ssf→`   | `this.setState with function as parameter` |
+| `props→` | `this.props` |
+| `state→` | `this.state` |
+| `bnd→`   | `binds the this of method inside the constructor` |
+
+The following table lists all the snippets that can be used for prop types.
+Every snippet regarding prop types begins with ```pt``` so it's easy to group it all together and explore all the available options.
+On top of that each prop type snippets has one equivalent when we need to declare that this property is also required.
+For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates the ```PropTypes.array.isRequired```
+
+| Trigger  | Content |
+| -------: | ------- |
+| `pta→`   | `PropTypes.array,` |
+| `ptar→`  | `PropTypes.array.isRequired,` |
+| `ptb→`   | `PropTypes.bool,` |
+| `ptbr→`  | `PropTypes.bool.isRequired,` |
+| `ptf→`   | `PropTypes.func,` |
+| `ptfr→`  | `PropTypes.func.isRequired,` |
+| `ptn→`   | `PropTypes.number,` |
+| `ptnr→`  | `PropTypes.number.isRequired,` |
+| `pto→`   | `PropTypes.object.,` |
+| `ptor→`  | `PropTypes.object.isRequired,` |
+| `pts→`   | `PropTypes.string,` |
+| `ptsr→`  | `PropTypes.string.isRequired,` |
+| `ptnd→`  | `PropTypes.node,` |
+| `ptndr→` | `PropTypes.node.isRequired,` |
+| `ptel→`  | `PropTypes.element,` |
+| `ptelr→` | `PropTypes.element.isRequired,` |
+| `pti→`   | `PropTypes.instanceOf(ClassName),` |
+| `ptir→`  | `PropTypes.instanceOf(ClassName).isRequired,` |
+| `pte→`   | `PropTypes.oneOf(['News', 'Photos']),` |
+| `pter→`  | `PropTypes.oneOf(['News', 'Photos']).isRequired,` |
+| `ptet→`  | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]),` |
+| `ptetr→` | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,` |
+| `ptao→`  | `PropTypes.arrayOf(PropTypes.number),` |
+| `ptaor→` | `PropTypes.arrayOf(PropTypes.number).isRequired,` |
+| `ptoo→`  | `PropTypes.objectOf(PropTypes.number),` |
+| `ptoor→` | `PropTypes.objectOf(PropTypes.number).isRequired,` |
+| `ptsh→`  | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),` |
+| `ptshr→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |
 
 # License
 
