@@ -7,7 +7,7 @@ A collection of ES6 snippets for faster JavaScript development in [Atom Editor](
 
 This collection is complementary to [atom/language-javascript](https://github.com/atom/language-javascript). It's based on [extrabacon/atom-turbo-javascript](https://github.com/extrabacon/atom-turbo-javascript) and it enforces [standardjs code style](http://standardjs.com/).
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.png)](https://github.com/feross/standard)
 
 __Yes!, no semicolons:__
 - [Are Semicolons Necessary in JavaScript?](https://www.youtube.com/watch?v=gsfbh17Ax9I)
