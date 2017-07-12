@@ -15,12 +15,20 @@
 		"prefix": "a",
 		"body": "await ${0}"
 	},
+	"await Promise.all": {
+		"prefix": "aa",
+		"body": "await Promise.all(${1:value})"
+	},
+	"await Promise.all map": {
+		"prefix": "aam",
+		"body": "await Promise.all(${1:array}.map((${2:value}) => {\n\t${0}\n}))"
+	},
 	"Node callback": {
 		"prefix": "cb",
 		"body": "function (err, ${1:value}) {\n\tif (err) throw err\n\t${0}\n}"
 	},
 	"Promise.all": {
-		"prefix": "pra",
+		"prefix": "pa",
 		"body": "Promise.all([${1:value}])"
 	},
 	"Promise.resolve": {
@@ -40,12 +48,12 @@
 		"body": "new Promise((resolve, reject) => {\n\t${0}\n})"
 	},
 	"Promise.then": {
-		"prefix": "then",
+		"prefix": "pt",
 		"body": "${1:promise}.then((${2:value}) => {\n\t${0}\n})"
 	},
 	"Promise.catch": {
-		"prefix": "catch",
-		"body": "${1:promise}.catch(${2:err} => {\n\t${0}\n})"
+		"prefix": "pc",
+		"body": "${1:promise}.catch(error => {\n\t${0}\n})"
 	},
 	"describe": {
 		"prefix": "desc",
@@ -409,6 +417,10 @@
 	"console.warn": {
 		"prefix": "cw",
 		"body": "console.warn(${0})"
+	},
+	"console.dir": {
+		"prefix": "cod",
+		"body": "console.dir(${0})"
 	},
 	"constructor": {
 		"prefix": "cn",

@@ -458,6 +458,11 @@ Array.isArray(${1:source})
 
 ### Promises
 
+#### `pa⇥` Promise.all
+```js
+Promise.all([${1:value}])
+```
+
 #### `p⇥` new Promise (ES6)
 ```js
 new Promise((resolve, reject) => {
@@ -465,16 +470,16 @@ new Promise((resolve, reject) => {
 })
 ```
 
-#### `then⇥` Promise.then
+#### `pt⇥` Promise.then
 ```js
 ${1:promise}.then((${2:value}) => {
   ${0}
 })
 ```
 
-#### `catch⇥` Promise.catch
+#### `pc⇥` Promise.catch
 ```js
-${1:promise}.catch((${2:err}) => {
+${1:promise}.catch(error => {
   ${0}
 })
 ```
@@ -753,6 +758,16 @@ JSON.parse($0)
 await ${0}
 ```
 
+#### `aa⇥` Promise.all
+```js
+await Promise.all(${1:value})
+```
+
+#### `aam⇥` Promise.all map
+```js
+await Promise.all(${1:array}.map((${2:value}) => {\n\t${0}\n}))
+```
+
 ### Console
 
 #### `cl⇥` console.log
@@ -770,7 +785,16 @@ console.error(${0})
 console.warn(${0})
 ```
 
+#### `cod⇥` console.warn
+```js
+console.dir(${0})
+```
+
 ## React snippets
+
+### Why do we include them here?
+
+If you're not writing react they should not really bother you because they are not short as the regular JS snippets. IMHO react as the leading solution for FE apps deserves to be included by default, because any JS dev will have to write some react eventually over the course of his/her careeer. By having them in a single package we can easily make sure there aren't any conflicts in the trigger prefixes.
 
 ### Supported languages (file extensions)
 * JavaScript (.js)
