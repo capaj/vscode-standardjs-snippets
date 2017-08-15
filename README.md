@@ -210,7 +210,7 @@ async function (${1:arguments}) {
 }
 ```
 
-#### `asa⇥` async arrow function
+#### `aa⇥` async arrow function
 ```js
 async (${1:arguments}) => {
   ${0}
@@ -758,12 +758,12 @@ JSON.parse($0)
 await ${0}
 ```
 
-#### `aa⇥` Promise.all
+#### `apa⇥` Promise.all
 ```js
 await Promise.all(${1:value})
 ```
 
-#### `aam⇥` Promise.all map
+#### `apm⇥` Promise.all map
 ```js
 await Promise.all(${1:array}.map((${2:value}) => {\n\t${0}\n}))
 ```
@@ -785,7 +785,7 @@ console.error(${0})
 console.warn(${0})
 ```
 
-#### `cod⇥` console.warn
+#### `cod⇥` console.dir
 ```js
 console.dir(${0})
 ```
@@ -794,7 +794,7 @@ console.dir(${0})
 
 ### Why do we include them here?
 
-If you're not writing react they should not really bother you because they are not short as the regular JS snippets. IMHO react as the leading solution for FE apps deserves to be included by default, because any JS dev will have to write some react eventually over the course of his/her careeer. By having them in a single package we can easily make sure there aren't any conflicts in the trigger prefixes.
+If you're not writing react, including them should not really bother you because they are not short as the regular JS snippets. IMHO react as the leading solution for FE apps deserves to be included by default, because any JS dev will have to write some react eventually over the course of his/her careeer. By having them in a single package we can easily make sure --there aren't any conflicts in the trigger prefixes.
 
 ### Supported languages (file extensions)
 * JavaScript (.js)

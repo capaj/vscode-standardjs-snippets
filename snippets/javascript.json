@@ -16,11 +16,11 @@
 		"body": "await ${0}"
 	},
 	"await Promise.all": {
-		"prefix": "aa",
+		"prefix": "apa",
 		"body": "await Promise.all(${1:value})"
 	},
 	"await Promise.all map": {
-		"prefix": "aam",
+		"prefix": "apm",
 		"body": "await Promise.all(${1:array}.map((${2:value}) => {\n\t${0}\n}))"
 	},
 	"Node callback": {
@@ -371,7 +371,7 @@
 		"body": "async function (${1:arguments}) {\n\t${0}\n}"
 	},
 	"async arrow function": {
-		"prefix": "asa",
+		"prefix": "aa",
 		"body": "async (${1:arguments}) => {\n\t${0}\n}"
 	},
 	"immediately-invoked function expression": {

@@ -45,12 +45,6 @@
     "description": "Adds a default constructor for the class that contains props and context as arguments"
   },
 
-  "emptyState": {
-    "prefix": "est",
-    "body": "this.state = {\n\t$1\n}",
-    "description": "Creates empty state object. To be used in a constructor."
-  },
-
   "componentWillMount": {
     "prefix": "cwm",
     "body": "\ncomponentWillMount () {\n\t$0\n}\n",
@@ -274,5 +268,15 @@
     "prefix": "ptshr",
     "body": "PropTypes.shape({\n\t$0\n}).isRequired,",
     "description": "An object taking on a particular shape required"
+  },
+  "jsx element": {
+    "prefix": "j",
+    "body": "<${1:elementName}>\n\t$0\n<${1:elementName}>",
+    "description": "an element"
+  },
+  "jsx element self closed": {
+    "prefix": "jc",
+    "body": "<${1:elementName} />",
+    "description": "an element self closed"
   }
 }
