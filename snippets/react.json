@@ -271,7 +271,7 @@
   },
   "jsx element": {
     "prefix": "j",
-    "body": "<${1:elementName}>\n\t$0\n<${1:elementName}>",
+    "body": "<${1:elementName}>\n\t$0\n</${1:elementName}>",
     "description": "an element"
   },
   "jsx element self closed": {

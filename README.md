@@ -794,7 +794,7 @@ console.dir(${0})
 
 ### Why do we include them here?
 
-If you're not writing react, including them should not really bother you because they are not short as the regular JS snippets. IMHO react as the leading solution for FE apps deserves to be included by default, because any JS dev will have to write some react eventually over the course of his/her careeer. By having them in a single package we can easily make sure --there aren't any conflicts in the trigger prefixes.
+If you're not writing react, including them should not really bother you because they are not short as the regular JS snippets. ALso IMHO react is the leading solution for FE apps deserves to be included by default, because any JS dev will have to write some react eventually over the course of his/her careeer. By having them in a single package we can easily make sure --there aren't any conflicts in the trigger prefixes.
 
 ### Supported languages (file extensions)
 * JavaScript (.js)
@@ -807,6 +807,8 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 | Trigger  | Content |
 | -------: | ------- |
+| `j→`     | jsx component |
+| `jc→`    | jsx self-closed component |
 | `rcc→`   | class component skeleton |
 | `rccp→`  | class component skeleton with prop types after the class |
 | `rcjc→`  | class component skeleton without import and default export lines |
