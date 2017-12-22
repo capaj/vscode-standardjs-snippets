@@ -1,19 +1,20 @@
 # vscode-standardjs-snippets
+
 originally forked from https://github.com/gaboesquivel/atom-standardjs-snippets, but we've added couple more. Also these are not using special characters because vscode doesn't like them in the snippets.
 
 ## Standard JavaScript Snippets for Visual studio code
 
-A collection of ES6 snippets for faster JavaScript development in [Atom Editor](https://atom.io/).  
+A collection of ES6 snippets for faster JavaScript development in [Atom Editor](https://atom.io/).
 
 This collection is complementary to [atom/language-javascript](https://github.com/atom/language-javascript). It's based on [extrabacon/atom-turbo-javascript](https://github.com/extrabacon/atom-turbo-javascript) and it enforces [standardjs code style](http://standardjs.com/).
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.png)](https://github.com/feross/standard)
 
-__Yes!, no semicolons:__
-- [Are Semicolons Necessary in JavaScript?](https://www.youtube.com/watch?v=gsfbh17Ax9I)
-- [An Open Letter to JavaScript Leaders Regarding Semicolons](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding)
-- [JavaScript Semicolon Insertion - Everything You Need to Know](http://inimino.org/~inimino/blog/javascript_semicolons)
+**Yes!, no semicolons:**
 
+* [Are Semicolons Necessary in JavaScript?](https://www.youtube.com/watch?v=gsfbh17Ax9I)
+* [An Open Letter to JavaScript Leaders Regarding Semicolons](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding)
+* [JavaScript Semicolon Insertion - Everything You Need to Know](http://inimino.org/~inimino/blog/javascript_semicolons)
 
 ## Making the snippets top priority
 
@@ -22,70 +23,81 @@ I certainly prefer snippets to have the top priority in the autocompletion. This
 ```
 "editor.snippetSuggestions": "top",
 ```
+
 in your settings.json. Otherwise vscode prefers keywords on the top.
 
 ## Snippets
 
-Snippets are optimized to be short and easy to remember. Note that these links work only on github, not on VSCode marketplace:
+Snippets are optimized to be short and easy to remember. Shortest are the ones you should be using most often. Note that these links work only on github, not on VSCode marketplace:
 
-- [declarations](#declarations)
-- [flow control](#flow-control)
-- [functions](#functions)
-- [iterables](#iterables)
-- [objects and classes](#objects-and-classes)
-- [returning values](#returning-values)
-- [types](#types)
-- [promises](#promises)
-- [ES6 modules](#es6-modules)
-- [testing](#testing)
-- [console](#console)
-- [timers](#timers)
-- [DOM](#dom)
-- [Node.js](#nodejs)
-- [miscellaneous](#miscellaneous)
+* [declarations](#declarations)
+* [flow control](#flow-control)
+* [functions](#functions)
+* [iterables](#iterables)
+* [objects and classes](#objects-and-classes)
+* [returning values](#returning-values)
+* [types](#types)
+* [promises](#promises)
+* [ES6 modules](#es6-modules)
+* [testing](#testing)
+* [console](#console)
+* [timers](#timers)
+* [DOM](#dom)
+* [Node.js](#nodejs)
+* [miscellaneous](#miscellaneous)
 
 ### Declarations
 
 #### `v⇥` var statement
+
 ```js
 var ${1:name}
 ```
 
 #### `va⇥` var assignment
+
 ```js
 var ${1:name} = ${2:value}
 ```
 
 #### `l⇥` let statement
+
 ```js
 let ${1:name}
 ```
 
 #### `la⇥` let assignment awaited
+
 ```js
 let ${1:name} = await ${2:value}
 ```
 
 #### `ly⇥` let yielded assignment
+
 ```js
 let ${1:name} = yield ${2:value}
 ```
 
 #### `c⇥` const statement
+
 ```js
 const ${1:name}
 ```
+
 #### `cd⇥` const from destructuring
+
 ```js
 const {${1:name}} = ${2:value}
 ```
 
 #### `ca⇥` const assignment awaited
+
 ```js
 const ${1:name} = await ${2:value}
 ```
 
 #### `cy⇥` const yielded assignment
+
 ```js
 const ${1:name} = yield ${2:value}
 ```
@@ -93,6 +105,7 @@ const ${1:name} = yield ${2:value}
 ### Flow Control
 
 #### `i⇥` if statement
+
 ```js
 if (${1:condition}) {
   ${0}
@@ -100,6 +113,7 @@ if (${1:condition}) {
 ```
 
 #### `el⇥` else statement
+
 ```js
 else {
   ${0}
@@ -107,6 +121,7 @@ else {
 ```
 
 #### `ife⇥` else statement
+
 ```js
 if (${1:condition}) {
   ${0}
@@ -116,6 +131,7 @@ if (${1:condition}) {
 ```
 
 #### `ei⇥` else if statement
+
 ```js
 else if (${1:condition}) {
   ${0}
@@ -123,6 +139,7 @@ else if (${1:condition}) {
 ```
 
 #### `fl⇥` for loop (ES6)
+
 ```js
 for (let ${1:i} = 0, ${2:len} = ${3:iterable}.length ${1:i} < ${2:len}; ${1:i}++) {
   ${0}
@@ -130,6 +147,7 @@ for (let ${1:i} = 0, ${2:len} = ${3:iterable}.length ${1:i} < ${2:len}; ${1:i}++
 ```
 
 #### `fi⇥` for in loop (ES6)
+
 ```js
 for (let ${1:key} in ${2:source}) {
   if (${2:source}.hasOwnProperty(${1:key})) {
@@ -139,6 +157,7 @@ for (let ${1:key} in ${2:source}) {
 ```
 
 #### `fo⇥` for of loop (ES6)
+
 ```js
 for (let ${1:key} of ${2:source}) {
   ${0}
@@ -146,6 +165,7 @@ for (let ${1:key} of ${2:source}) {
 ```
 
 #### `wl⇥` while loop
+
 ```js
 while (${1:condition}) {
   ${0}
@@ -153,6 +173,7 @@ while (${1:condition}) {
 ```
 
 #### `wid⇥` while iteration decrementing
+
 ```js
 let ${1:array}Index = ${1:array}.length
 while (${1:array}Index--) {
@@ -161,6 +182,7 @@ while (${1:array}Index--) {
 ```
 
 #### `tc⇥` try/catch
+
 ```js
 try {
  ${0}
@@ -170,6 +192,7 @@ try {
 ```
 
 #### `tf⇥` try/finally
+
 ```js
 try {
  ${0}
@@ -179,6 +202,7 @@ try {
 ```
 
 #### `tcf⇥` try/catch/finally
+
 ```js
 try {
   ${0}
@@ -191,12 +215,14 @@ try {
 
 ### Functions
 
-#### `f⇥` anonymous function
+#### `fan⇥` anonymous function
+
 ```js
 function (${1:arguments}) {${0}}
 ```
 
 #### `fn⇥` named function
+
 ```js
 function ${1:name}(${2:arguments}) {
   ${0}
@@ -204,6 +230,7 @@ function ${1:name}(${2:arguments}) {
 ```
 
 #### `asf⇥` async function
+
 ```js
 async function (${1:arguments}) {
   ${0}
@@ -211,6 +238,7 @@ async function (${1:arguments}) {
 ```
 
 #### `aa⇥` async arrow function
+
 ```js
 async (${1:arguments}) => {
   ${0}
@@ -218,6 +246,7 @@ async (${1:arguments}) => {
 ```
 
 #### `iife⇥` immediately-invoked function expression (IIFE)
+
 ```js
 ;(function (${1:arguments}) {
   ${0}
@@ -225,26 +254,39 @@ async (${1:arguments}) => {
 ```
 
 #### `fa⇥` function apply
+
 ```js
 ${1:fn}.apply(${2:this}, ${3:arguments})
 ```
 
 #### `fc⇥` function call
+
 ```js
 ${1:fn}.call(${2:this}, ${3:arguments})
 ```
 
 #### `fb⇥` function bind
+
 ```js
 ${1:fn}.bind(${2:this}, ${3:arguments})
 ```
 
 #### `af⇥` arrow function (ES6)
+
 ```js
 (${1:arguments}) => ${2:statement}
 ```
 
-#### `afb⇥` arrow function with body (ES6)
+#### `fd⇥` arrow function with body (ES6)
+
+```js
+({${1:arguments}}) => {
+  ${0}
+}
+```
+
+#### `f⇥` arrow function with body (ES6)
+
 ```js
 (${1:arguments}) => {
   ${0}
@@ -252,6 +294,7 @@ ${1:fn}.bind(${2:this}, ${3:arguments})
 ```
 
 #### `gf⇥` generator function (ES6)
+
 ```js
 function* (${1:arguments}) {
   ${0}
@@ -259,6 +302,7 @@ function* (${1:arguments}) {
 ```
 
 #### `gfn⇥` named generator function (ES6)
+
 ```js
 function* ${1:name}(${1:arguments}) {
   ${0}
@@ -268,6 +312,7 @@ function* ${1:name}(${1:arguments}) {
 ### Iterables
 
 #### `fe⇥` forEach loop
+
 ```js
 ${1:iterable}.forEach((${2:item}) => {
   ${0}
@@ -275,6 +320,7 @@ ${1:iterable}.forEach((${2:item}) => {
 ```
 
 #### `map⇥` map function
+
 ```js
 ${1:iterable}.map((${2:item}) => {
   ${0}
@@ -282,6 +328,7 @@ ${1:iterable}.map((${2:item}) => {
 ```
 
 #### `reduce⇥` reduce function
+
 ```js
 ${1:iterable}.reduce((${2:previous}, ${3:current}) => {
   ${0}
@@ -289,6 +336,7 @@ ${1:iterable}.reduce((${2:previous}, ${3:current}) => {
 ```
 
 #### `filter⇥` filter function
+
 ```js
 ${1:iterable}.filter((${2:item}) => {
   ${0}
@@ -296,6 +344,7 @@ ${1:iterable}.filter((${2:item}) => {
 ```
 
 #### `find⇥` ES6 find function
+
 ```js
 ${1:iterable}.find((${2:item}) => {
   ${0}
@@ -303,6 +352,7 @@ ${1:iterable}.find((${2:item}) => {
 ```
 
 #### `every⇥` every function
+
 ```js
 ${1:iterable}.every((${2:item}) => {
   ${0}
@@ -310,6 +360,7 @@ ${1:iterable}.every((${2:item}) => {
 ```
 
 #### `some⇥` some function
+
 ```js
 ${1:iterable}.some((${2:item}) => {
   ${0}
@@ -319,6 +370,7 @@ ${1:iterable}.some((${2:item}) => {
 ### Objects and classes
 
 #### `cs⇥` class (ES6)
+
 ```js
 class ${1:name} {
   constructor(${2:arguments}) {
@@ -328,6 +380,7 @@ class ${1:name} {
 ```
 
 #### `csx⇥` extend a class (ES6)
+
 ```js
 class ${1:name} extends ${2:base} {
   constructor(${2:arguments}) {
@@ -337,8 +390,8 @@ class ${1:name} extends ${2:base} {
 }
 ```
 
-
 #### `m⇥` method (ES6 syntax)
+
 ```js
 ${1:method} (${2:arguments}) {
   ${0}
@@ -346,6 +399,7 @@ ${1:method} (${2:arguments}) {
 ```
 
 #### `get⇥` getter (ES6 syntax)
+
 ```js
 get ${1:property} () {
   ${0}
@@ -353,6 +407,7 @@ get ${1:property} () {
 ```
 
 #### `set⇥` setter (ES6 syntax)
+
 ```js
 set ${1:property} (${2:value}) {
   ${0}
@@ -360,6 +415,7 @@ set ${1:property} (${2:value}) {
 ```
 
 #### `gs⇥` getter and setter (ES6 syntax)
+
 ```js
 get ${1:property} () {
   ${0}
@@ -370,6 +426,7 @@ set ${1:property} (${2:value}) {
 ```
 
 #### `proto⇥` prototype method
+
 ```js
 ${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {
   ${0}
@@ -377,26 +434,31 @@ ${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {
 ```
 
 #### `ok` Object.keys
+
 ```js
 Object.keys(${1:obj})
 ```
 
 #### `oc` Object.create
+
 ```js
 Object.create(${1:obj})
 ```
 
 #### `oa` Object.assign
+
 ```js
 Object.assign(${1:dest}, ${2:source})
 ```
 
 #### `og` Object.getOwnPropertyDescriptor
+
 ```js
 Object.getOwnPropertyDescriptor(${1:dest}, '${2:prop}')
 ```
 
 #### `od` Object.defineProperty
+
 ```js
 Object.defineProperty(${1:dest}, '${2:prop}', {
   ${0}
@@ -406,21 +468,25 @@ Object.defineProperty(${1:dest}, '${2:prop}', {
 ### Returning values
 
 #### `r⇥` return
+
 ```js
 return ${0}
 ```
 
 #### `rt⇥` return this
+
 ```js
 return this
 ```
 
 #### `rn⇥` return null
+
 ```js
 return null
 ```
 
 #### `ro⇥` return new object
+
 ```js
 return {
   ${0}
@@ -428,6 +494,7 @@ return {
 ```
 
 #### `ra⇥` return new array
+
 ```js
 return [
   ${0}
@@ -435,6 +502,7 @@ return [
 ```
 
 #### `rp⇥` return Promise (ES6)
+
 ```js
 return new Promise((resolve, reject) => {
   ${0}
@@ -442,16 +510,19 @@ return new Promise((resolve, reject) => {
 ```
 
 #### `tof⇥` typeof comparison
+
 ```js
 typeof ${1:source} === '${2:undefined}'
 ```
 
 #### `iof⇥` instanceof comparison
+
 ```js
 ${1:source} instanceof ${2:Object}
 ```
 
 #### `ia⇥` isArray
+
 ```js
 Array.isArray(${1:source})
 ```
@@ -459,11 +530,13 @@ Array.isArray(${1:source})
 ### Promises
 
 #### `pa⇥` Promise.all
+
 ```js
-Promise.all([${1:value}])
+Promise.all(${1:value})
 ```
 
 #### `p⇥` new Promise (ES6)
+
 ```js
 new Promise((resolve, reject) => {
   ${0}
@@ -471,6 +544,7 @@ new Promise((resolve, reject) => {
 ```
 
 #### `pt⇥` Promise.then
+
 ```js
 ${1:promise}.then((${2:value}) => {
   ${0}
@@ -478,6 +552,7 @@ ${1:promise}.then((${2:value}) => {
 ```
 
 #### `pc⇥` Promise.catch
+
 ```js
 ${1:promise}.catch(error => {
   ${0}
@@ -487,62 +562,83 @@ ${1:promise}.catch(error => {
 ### ES6 modules
 
 #### `e⇥` module export
+
 ```js
 export ${1:member}
 ```
 
 #### `ed⇥` module default export
+
 ```js
 export default ${1:member}
 ```
 
 #### `edf⇥` module default export function
+
 ```js
 export default function ${1:name} (${2:arguments}) {\n\t${0}\n}
-
 ```
+
 #### `ec⇥` module export const
+
 ```js
 export const ${1:member} = ${2:value}
 ```
 
 #### `im⇥` module import
+
 ```js
 import ${1:*} from '${2:module}'
 ```
 
 #### `ia⇥` module import as
+
 ```js
 import ${1:*} as ${2:name} from '${3:module}'
 ```
 
 #### `id⇥` module import destructuring
+
 ```js
-import {$1} from '${2:module}'
+import { $1 } from '${2:module}'
 ```
 
 ### BDD testing (Mocha, Jasmine, etc.)
 
 #### `desc⇥` describe
+
 ```js
 describe('${1:description}', function () {
   ${0}
 })
 ```
-#### `it⇥` synchronous "it"
+
+#### `it⇥` asynchronous "it"
+
 ```js
-it('${1:description}', function () {
+it('${1:description}', async () => {
   ${0}
 })
 ```
-#### `ita⇥` asynchronous "it"
+
+#### `itd⇥` "it" with callback
+
 ```js
-it('${1:description}', function (done) {
+it('${1:description}', (done) => {
+  ${0}
+})
+```
+
+#### `its⇥` "it" synchronous
+
+```js
+it('${1:description}', () => {
   ${0}
 })
 ```
 
 #### `bf⇥` before test suite
+
 ```js
 before(function () {
   ${0}
@@ -550,6 +646,7 @@ before(function () {
 ```
 
 #### `bfe⇥` before each test
+
 ```js
 beforeEach(function () {
   ${0}
@@ -557,6 +654,7 @@ beforeEach(function () {
 ```
 
 #### `aft⇥` after test suite
+
 ```js
 after(function () {
   ${0}
@@ -564,6 +662,7 @@ after(function () {
 ```
 
 #### `afe⇥` after each test
+
 ```js
 afterEach(function () {
   ${0}
@@ -573,6 +672,7 @@ afterEach(function () {
 ### Timers
 
 #### `st⇥` setTimeout
+
 ```js
 setTimeout(() => {
   ${0}
@@ -580,6 +680,7 @@ setTimeout(() => {
 ```
 
 #### `si⇥` setInterval
+
 ```js
 setTimeout(() => {
   ${0}
@@ -587,6 +688,7 @@ setTimeout(() => {
 ```
 
 #### `sim⇥` setImmediate
+
 ```js
 setImmediate(() => {
   ${0}
@@ -596,6 +698,7 @@ setImmediate(() => {
 ### DOM
 
 #### `ae⇥` addEventListener
+
 ```js
 ${1:document}.addEventListener('${2:event}', ${3:ev} => {
   ${0}
@@ -603,39 +706,45 @@ ${1:document}.addEventListener('${2:event}', ${3:ev} => {
 ```
 
 #### `rel⇥` removeEventListener
+
 ```js
 ${1:document}.removeEventListener('${2:event}', ${3:listener})
 ```
 
 #### `evc` dom event cancel default and propagation
+
 ```js
 ev.preventDefault()
 ev.stopPropagation()
 return false
 ```
 
-
 #### `gi⇥` getElementById
+
 ```js
 ${1:document}.getElementById('${2:id}')
 ```
 
 #### `gc⇥` getElementsByClassName
+
 ```js
 Array.from(${1:document}.getElementsByClassName('${2:class}'))
 ```
 
 #### `gt⇥` getElementsByTagName
+
 ```js
 Array.from(${1:document}.getElementsByTagName('${2:tag}'))
 ```
 
 #### `qs⇥` querySelector
+
 ```js
 ${1:document}.querySelector('${2:selector}')
 ```
 
 #### `qsa⇥` querySelectorAll
+
 ```js
 Array.from(${1:document}.querySelectorAll('${2:selector}'))
 ```
@@ -703,6 +812,7 @@ ${1:document}.removeAttribute('${2:attr}');
 ### Node.js
 
 #### `cb⇥` Node.js style callback
+
 ```js
 function (err, ${1:value}) {
   if (err) throw err
@@ -711,25 +821,31 @@ function (err, ${1:value}) {
 ```
 
 #### `rq⇥` require a module
+
 ```js
 require('${1:module}')
 ```
+
 #### `cr⇥` require and assign a module
+
 ```js
 const ${1:module} = require('${1:module}')
 ```
 
 #### `em⇥` export member
+
 ```js
 exports.${1:name} = ${2:value}
 ```
 
 #### `me⇥` module.exports
+
 ```js
 module.exports = ${1:name}
 ```
 
 #### `on⇥` attach an event handler
+
 ```js
 ${1:emitter}.on('${2:event}', (${3:arguments}) => {
   ${0}
@@ -739,31 +855,37 @@ ${1:emitter}.on('${2:event}', (${3:arguments}) => {
 ### Miscellaneous
 
 #### `us⇥` use strict
+
 ```js
 'use strict'
 ```
 
 #### `js⇥` JSON Stringify
+
 ```js
 JSON.stringify($0)
 ```
 
 #### `jp⇥` JSON Parse
+
 ```js
 JSON.parse($0)
 ```
 
 #### `a⇥` await
+
 ```js
 await ${0}
 ```
 
 #### `apa⇥` Promise.all
+
 ```js
 await Promise.all(${1:value})
 ```
 
 #### `apm⇥` Promise.all map
+
 ```js
 await Promise.all(${1:array}.map((${2:value}) => {\n\t${0}\n}))
 ```
@@ -771,21 +893,25 @@ await Promise.all(${1:array}.map((${2:value}) => {\n\t${0}\n}))
 ### Console
 
 #### `cl⇥` console.log
+
 ```js
 console.log(${0})
 ```
 
 #### `ce⇥` console.error
+
 ```js
 console.error(${0})
 ```
 
 #### `cw⇥` console.warn
+
 ```js
 console.warn(${0})
 ```
 
 #### `cod⇥` console.dir
+
 ```js
 console.dir(${0})
 ```
@@ -797,6 +923,7 @@ console.dir(${0})
 If you're not writing react, including them should not really bother you because they are not short as the regular JS snippets. ALso IMHO react is the leading solution for FE apps deserves to be included by default, because any JS dev will have to write some react eventually over the course of his/her careeer. By having them in a single package we can easily make sure --there aren't any conflicts in the trigger prefixes.
 
 ### Supported languages (file extensions)
+
 * JavaScript (.js)
 * TypeScript (.ts)
 * JavaScript React (.jsx)
@@ -805,68 +932,68 @@ If you're not writing react, including them should not really bother you because
 These were taken from https://github.com/TimonVS/vscode-react-standard because the maintainer wasn't able to publish a new version for months even when there was a considerable flaw in the released version.
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
-| Trigger  | Content |
-| -------: | ------- |
-| `j→`     | jsx component |
-| `jc→`    | jsx self-closed component |
-| `rcc→`   | class component skeleton |
-| `rccp→`  | class component skeleton with prop types after the class |
-| `rcjc→`  | class component skeleton without import and default export lines |
-| `rcfc→`  | class component skeleton that contains all the lifecycle methods |
-| `rsc→`   | stateless component skeleton |
-| `rscp→`  | stateless component with prop types skeleton |
-| `rpt→`   | empty propTypes declaration |
-| `con→`   | class default constructor with props|
-| `conc→`  | class default constructor with props and context |
-| `est→`   | empty state object |
-| `cwm→`   | `componentWillMount method` |
-| `cdm→`   | `componentDidMount method` |
-| `cwr→`   | `componentWillReceiveProps method` |
-| `scu→`   | `shouldComponentUpdate method` |
-| `cwup→`  | `componentWillUpdate method` |
-| `cdup→`  | `componentDidUpdate method` |
-| `cwun→`  | `componentWillUnmount method` |
-| `ren→`   | `render method` |
-| `sst→`   | `this.setState with object as parameter` |
-| `ssf→`   | `this.setState with function as parameter` |
-| `props→` | `this.props` |
-| `state→` | `this.state` |
-| `bnd→`   | `binds the this of method inside the constructor` |
+|  Trigger | Content                                                          |
+| -------: | ---------------------------------------------------------------- |
+|     `j→` | jsx component                                                    |
+|    `jc→` | jsx self-closed component                                        |
+|   `rcc→` | class component skeleton                                         |
+|  `rccp→` | class component skeleton with prop types after the class         |
+|  `rcjc→` | class component skeleton without import and default export lines |
+|  `rcfc→` | class component skeleton that contains all the lifecycle methods |
+|   `rsc→` | stateless component skeleton                                     |
+|  `rscp→` | stateless component with prop types skeleton                     |
+|   `rpt→` | empty propTypes declaration                                      |
+|   `con→` | class default constructor with props                             |
+|  `conc→` | class default constructor with props and context                 |
+|   `est→` | empty state object                                               |
+|   `cwm→` | `componentWillMount method`                                      |
+|   `cdm→` | `componentDidMount method`                                       |
+|   `cwr→` | `componentWillReceiveProps method`                               |
+|   `scu→` | `shouldComponentUpdate method`                                   |
+|  `cwup→` | `componentWillUpdate method`                                     |
+|  `cdup→` | `componentDidUpdate method`                                      |
+|  `cwun→` | `componentWillUnmount method`                                    |
+|   `ren→` | `render method`                                                  |
+|   `sst→` | `this.setState with object as parameter`                         |
+|   `ssf→` | `this.setState with function as parameter`                       |
+| `props→` | `this.props`                                                     |
+| `state→` | `this.state`                                                     |
+|   `bnd→` | `binds the this of method inside the constructor`                |
 
 The following table lists all the snippets that can be used for prop types.
-Every snippet regarding prop types begins with ```pt``` so it's easy to group it all together and explore all the available options.
+Every snippet regarding prop types begins with `pt` so it's easy to group it all together and explore all the available options.
 On top of that each prop type snippets has one equivalent when we need to declare that this property is also required.
-For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates the ```PropTypes.array.isRequired```
+For example `pta` creates the `PropTypes.array` and `ptar` creates the `PropTypes.array.isRequired`
 
-| Trigger  | Content |
-| -------: | ------- |
-| `pta→`   | `PropTypes.array,` |
-| `ptar→`  | `PropTypes.array.isRequired,` |
-| `ptb→`   | `PropTypes.bool,` |
-| `ptbr→`  | `PropTypes.bool.isRequired,` |
-| `ptf→`   | `PropTypes.func,` |
-| `ptfr→`  | `PropTypes.func.isRequired,` |
-| `ptn→`   | `PropTypes.number,` |
-| `ptnr→`  | `PropTypes.number.isRequired,` |
-| `pto→`   | `PropTypes.object.,` |
-| `ptor→`  | `PropTypes.object.isRequired,` |
-| `pts→`   | `PropTypes.string,` |
-| `ptsr→`  | `PropTypes.string.isRequired,` |
-| `ptnd→`  | `PropTypes.node,` |
-| `ptndr→` | `PropTypes.node.isRequired,` |
-| `ptel→`  | `PropTypes.element,` |
-| `ptelr→` | `PropTypes.element.isRequired,` |
-| `pti→`   | `PropTypes.instanceOf(ClassName),` |
-| `ptir→`  | `PropTypes.instanceOf(ClassName).isRequired,` |
-| `pte→`   | `PropTypes.oneOf(['News', 'Photos']),` |
-| `pter→`  | `PropTypes.oneOf(['News', 'Photos']).isRequired,` |
-| `ptet→`  | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]),` |
-| `ptetr→` | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,` |
-| `ptao→`  | `PropTypes.arrayOf(PropTypes.number),` |
-| `ptaor→` | `PropTypes.arrayOf(PropTypes.number).isRequired,` |
-| `ptoo→`  | `PropTypes.objectOf(PropTypes.number),` |
-| `ptoor→` | `PropTypes.objectOf(PropTypes.number).isRequired,` |
-| `ptsh→`  | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),` |
+|  Trigger | Content                                                                              |
+| -------: | ------------------------------------------------------------------------------------ |
+|   `pta→` | `PropTypes.array,`                                                                   |
+|  `ptar→` | `PropTypes.array.isRequired,`                                                        |
+|   `ptb→` | `PropTypes.bool,`                                                                    |
+|  `ptbr→` | `PropTypes.bool.isRequired,`                                                         |
+|   `ptf→` | `PropTypes.func,`                                                                    |
+|  `ptfr→` | `PropTypes.func.isRequired,`                                                         |
+|   `ptn→` | `PropTypes.number,`                                                                  |
+|  `ptnr→` | `PropTypes.number.isRequired,`                                                       |
+|   `pto→` | `PropTypes.object.,`                                                                 |
+|  `ptor→` | `PropTypes.object.isRequired,`                                                       |
+|   `pts→` | `PropTypes.string,`                                                                  |
+|  `ptsr→` | `PropTypes.string.isRequired,`                                                       |
+|  `ptnd→` | `PropTypes.node,`                                                                    |
+| `ptndr→` | `PropTypes.node.isRequired,`                                                         |
+|  `ptel→` | `PropTypes.element,`                                                                 |
+| `ptelr→` | `PropTypes.element.isRequired,`                                                      |
+|   `pti→` | `PropTypes.instanceOf(ClassName),`                                                   |
+|  `ptir→` | `PropTypes.instanceOf(ClassName).isRequired,`                                        |
+|   `pte→` | `PropTypes.oneOf(['News', 'Photos']),`                                               |
+|  `pter→` | `PropTypes.oneOf(['News', 'Photos']).isRequired,`                                    |
+|  `ptet→` | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]),`                         |
+| `ptetr→` | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,`              |
+|  `ptao→` | `PropTypes.arrayOf(PropTypes.number),`                                               |
+| `ptaor→` | `PropTypes.arrayOf(PropTypes.number).isRequired,`                                    |
+|  `ptoo→` | `PropTypes.objectOf(PropTypes.number),`                                              |
+| `ptoor→` | `PropTypes.objectOf(PropTypes.number).isRequired,`                                   |
+|  `ptsh→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),`            |
 | `ptshr→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |
 
 # License

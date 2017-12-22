@@ -3,7 +3,7 @@
   "displayName": "JavaScript standardjs styled snippets",
   "publisher": "capaj",
   "icon": "images/javascript.png",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "standardjs styled javascript snippets for visual studio code",
   "repository": {
     "type": "git",
@@ -18,20 +18,22 @@
     "url": "https://github.com/capaj/vscode-standardjs-snippets/issues"
   },
   "homepage": "https://github.com/capaj/vscode-standardjs-snippets#readme",
-  "categories": [
-    "Snippets"
-  ],
+  "categories": ["Snippets"],
   "contributes": {
-    "snippets": [{
+    "snippets": [
+      {
         "language": "javascript",
         "path": "./snippets/javascript.json"
-      }, {
+      },
+      {
         "language": "typescript",
         "path": "./snippets/javascript.json"
-      }, {
+      },
+      {
         "language": "javascriptreact",
         "path": "./snippets/javascript.json"
-      }, {
+      },
+      {
         "language": "typescriptreact",
         "path": "./snippets/javascript.json"
       },
