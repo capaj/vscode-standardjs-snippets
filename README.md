@@ -1,10 +1,10 @@
 # vscode-standardjs-snippets
 
-originally forked from https://github.com/gaboesquivel/atom-standardjs-snippets, but we've added couple more. Also these are not using special characters because vscode doesn't like them in the snippets.
+originally forked from https://github.com/gaboesquivel/atom-standardjs-snippets, but we've added couple more. Also these are not using special characters because vscode doesn't accept them in the snippets.
 
 ## Standard JavaScript Snippets for Visual studio code
 
-A collection of ES6 snippets for faster JavaScript development in [Atom Editor](https://atom.io/).
+A collection of ES6 snippets for faster JavaScript development in [Visual studio Code](https://code.visualstudio.com/).
 
 This collection is complementary to [atom/language-javascript](https://github.com/atom/language-javascript). It's based on [extrabacon/atom-turbo-javascript](https://github.com/extrabacon/atom-turbo-javascript) and it enforces [standardjs code style](http://standardjs.com/).
 
@@ -18,7 +18,7 @@ This collection is complementary to [atom/language-javascript](https://github.co
 
 ## Making the snippets top priority
 
-I certainly prefer snippets to have the top priority in the autocompletion. This is not a default settingm but can be enabled by:
+I mostly prefer snippets to have the top priority in the autocompletion. This is not a default settingm but can be enabled by:
 
 ```
 "editor.snippetSuggestions": "top",
