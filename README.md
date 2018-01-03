@@ -898,6 +898,12 @@ await Promise.all(${1:array}.map((${2:value}) => {\n\t${0}\n}))
 console.log(${0})
 ```
 
+#### `cv⇥` console.log
+
+```js
+console.log('${0}:', ${0})
+```
+
 #### `ce⇥` console.error
 
 ```js
