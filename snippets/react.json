@@ -50,7 +50,6 @@
     "body": "\ncomponentWillMount () {\n\t$0\n}\n",
     "description": "Invoked once, both on the client and server, immediately before the initial rendering occurs"
   },
-
   "componentDidMount": {
     "prefix": "cdm",
     "body": "componentDidMount () {\n\t$0\n}\n",
@@ -61,6 +60,12 @@
     "prefix": "cwr",
     "body": "componentWillReceiveProps (nextProps) {\n\t$0\n}\n",
     "description": "Invoked when a component is receiving new props. This method is not called for the initial render."
+  },
+
+  "componentGetDerivedStateFromProps": {
+    "prefix": "cgd",
+    "body": "\nstatic getDerivedStateFromProps(nextProps, prevState) {\n\t$0\n}\n",
+    "description": "Invoked after a component is instantiated as well as when it receives new props. It should return an object to update state, or null to indicate that the new props do not require any state updates."
   },
 
   "shouldComponentUpdate": {
