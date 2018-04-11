@@ -391,19 +391,7 @@
     "prefix": "iife",
     "body": ";(function (${1:arguments}) {\n\t${0}\n})(${2})"
   },
-  "function apply": {
-    "prefix": "fa",
-    "body": "${1:fn}.apply(${2:this}, ${3:arguments})"
-  },
-  "function call": {
-    "prefix": "fc",
-    "body": "${1:fn}.call(${2:this}, ${3:arguments})"
-  },
-  "function bind": {
-    "prefix": "fb",
-    "body": "${1:fn}.bind(${2:this}, ${3:arguments})"
-  },
-  "arrow function": {
+   "arrow function": {
     "prefix": "af",
     "body": "(${1:arguments}) => ${2:statement}"
   },
@@ -414,6 +402,10 @@
   "arrow function with body": {
     "prefix": "f",
     "body": "(${1:arguments}) => {\n\t${0}\n}"
+  },
+  "arrow function with return": {
+    "prefix": "fr",
+    "body": "(${1:arguments}) => {\n\treturn ${0}\n}"
   },
   "generator function": {
     "prefix": "gf",

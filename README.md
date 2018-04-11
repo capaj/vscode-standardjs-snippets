@@ -237,7 +237,7 @@ async function (${1:arguments}) {
 }
 ```
 
-#### `aa⇥` async arrow function
+#### `aa⇥` async arrow function with
 
 ```js
 async (${1:arguments}) => {
@@ -290,6 +290,14 @@ ${1:fn}.bind(${2:this}, ${3:arguments})
 ```js
 (${1:arguments}) => {
   ${0}
+}
+```
+
+#### `fr⇥` arrow function with return (ES6)
+
+```js
+(${1:arguments}) => {
+  return ${0}
 }
 ```
 
@@ -937,35 +945,41 @@ If you're not writing react, including them should not really bother you because
 
 These were taken from https://github.com/TimonVS/vscode-react-standard because the maintainer wasn't able to publish a new version for months even when there was a considerable flaw in the released version.
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
-
-|  Trigger | Content                                                          |
-| -------: | ---------------------------------------------------------------- |
-|     `j→` | jsx component                                                    |
-|    `jc→` | jsx self-closed component                                        |
-|   `rcc→` | class component skeleton                                         |
-|  `rccp→` | class component skeleton with prop types after the class         |
-|  `rcjc→` | class component skeleton without import and default export lines |
-|  `rcfc→` | class component skeleton that contains all the lifecycle methods |
-|   `rsc→` | stateless component skeleton                                     |
-|  `rscp→` | stateless component with prop types skeleton                     |
-|   `rpt→` | empty propTypes declaration                                      |
-|   `con→` | class default constructor with props                             |
-|  `conc→` | class default constructor with props and context                 |
-|   `est→` | empty state object                                               |
-|   `cwm→` | `componentWillMount method`                                      |
-|   `cdm→` | `componentDidMount method`                                       |
-|   `cwr→` | `componentWillReceiveProps method`                               |
-|   `cgd→` | `componentGetDerivedStateFromProps method`                               |
-|   `scu→` | `shouldComponentUpdate method`                                   |
-|  `cwup→` | `componentWillUpdate method`                                     |
-|  `cdup→` | `componentDidUpdate method`                                      |
-|  `cwun→` | `componentWillUnmount method`                                    |
-|   `ren→` | `render method`                                                  |
-|   `sst→` | `this.setState with object as parameter`                         |
-|   `ssf→` | `this.setState with function as parameter`                       |
+| Trigger  | Content                                                          |
+|----------|------------------------------------------------------------------|
+| `j→`     | jsx element                                                      |
+| `jc→`    | jsx self-closed element                                          |
+| `jm→`    | `jsx elements map`                                               |
+| `jmr→`   | `jsx elements map with return`                                   |
+| `rcc→`   | class component skeleton                                         |
+| `rccp→`  | class component skeleton with prop types after the class         |
+| `rcjc→`  | class component skeleton without import and default export lines |
+| `rcfc→`  | class component skeleton that contains all the lifecycle methods |
+| `rsc→`   | stateless component skeleton                                     |
+| `rscp→`  | stateless component with prop types skeleton                     |
+| `rpt→`   | empty propTypes declaration                                      |
+| `con→`   | class default constructor with props                             |
+| `conc→`  | class default constructor with props and context                 |
+| `est→`   | empty state object                                               |
+| `cwm→`   | `componentWillMount method`                                      |
+| `cdm→`   | `componentDidMount method`                                       |
+| `cwr→`   | `componentWillReceiveProps method`                               |
+| `cgd→`   | `componentGetDerivedStateFromProps method`                       |
+| `scu→`   | `shouldComponentUpdate method`                                   |
+| `cwup→`  | `componentWillUpdate method`                                     |
+| `cdup→`  | `componentDidUpdate method`                                      |
+| `cwun→`  | `componentWillUnmount method`                                    |
+| `ren→`   | `render method`                                                  |
+| `sst→`   | `this.setState with object as parameter`                         |
+| `ssf→`   | `this.setState with function as parameter`                       |
 | `props→` | `this.props`                                                     |
 | `state→` | `this.state`                                                     |
-|   `bnd→` | `binds the this of method inside the constructor`                |
+| `bnd→`   | `binds the this of method inside the constructor`                |
+
+There are also snippets to be triggered with a text selection(trigger via insert snippet command):
+```
+jsx element wrap selection
+```
 
 The following table lists all the snippets that can be used for prop types.
 Every snippet regarding prop types begins with `pt` so it's easy to group it all together and explore all the available options.

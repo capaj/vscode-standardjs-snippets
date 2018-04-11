@@ -1,7 +1,7 @@
 {
   "reactClassCompoment": {
     "prefix": "rcc",
-    "body": "import React, { Component } from 'react'\n\nclass ${1:componentName} extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default ${1:componentName}",
+    "body": "import React, { Component } from 'react'\n\nclass ${1:componentName} extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default ${1}",
     "description": "Creates a React component class with ES6 module system"
   },
 
@@ -13,24 +13,24 @@
 
   "reactClassCompomentPropTypes": {
     "prefix": "rccp",
-    "body": "import React, { Component, PropTypes } from 'react'\n\nclass ${1:componentName} extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n}\n\nexport default ${1:componentName}",
+    "body": "import React, { Component, PropTypes } from 'react'\n\nclass ${1:componentName} extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1}.propTypes = {\n\n}\n\nexport default ${1}",
     "description": "Creates a React component class with PropTypes and ES6 module system"
   },
 
   "reactClassCompomentWithMethods": {
     "prefix": "rcfc",
-    "body": "import React, { Component, PropTypes } from 'react'\n\nclass ${1:componentName} extends Component {\n\tconstructor(props) {\n\t\tsuper(props)\n\n\t}\n\n\tcomponentWillMount () {\n\n\t}\n\n\tcomponentDidMount () {\n\n\t}\n\n\tcomponentWillReceiveProps (nextProps) {\n\n\t}\n\n\tshouldComponentUpdate (nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate (nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate (prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount () {\n\n\t}\n\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n}\n\nexport default ${1:componentName}",
+    "body": "import React, { Component, PropTypes } from 'react'\n\nclass ${1:componentName} extends Component {\n\tconstructor(props) {\n\t\tsuper(props)\n\n\t}\n\n\tcomponentWillMount () {\n\n\t}\n\n\tcomponentDidMount () {\n\n\t}\n\n\tcomponentWillReceiveProps (nextProps) {\n\n\t}\n\n\tshouldComponentUpdate (nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate (nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate (prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount () {\n\n\t}\n\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1}.propTypes = {\n\n}\n\nexport default ${1}",
     "description": "Creates a React component class with PropTypes and all lifecycle methods and ES6 module system"
   },
 
   "reactStateless": {
     "prefix": "rsc",
-    "body": "import React from 'react'\n\nconst ${1:componentName} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${1:componentName}",
+    "body": "import React from 'react'\n\nconst ${1:componentName} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${1}",
     "description": "Creates a stateless React component without PropTypes and ES6 module system"
   },
   "reactStatelessProps": {
     "prefix": "rscp",
-    "body": "import React, { PropTypes } from 'react'\n\nconst ${1:componentName} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t)\n}\n\n${1:componentName}.propTypes = {\n\t$0\n}\n\nexport default ${1:componentName}",
+    "body": "import React, { PropTypes } from 'react'\n\nconst ${1:componentName} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t)\n}\n\n${1}.propTypes = {\n\t$0\n}\n\nexport default ${1}",
     "description": "Creates a stateless React component with PropTypes and ES6 module system"
   },
 
@@ -276,12 +276,27 @@
   },
   "jsx element": {
     "prefix": "j",
-    "body": "<${1:elementName}>\n\t$0\n</${1:elementName}>",
+    "body": "<${1:elementName}>\n\t$0\n</${1}>",
     "description": "an element"
   },
   "jsx element self closed": {
     "prefix": "jc",
     "body": "<${1:elementName} />",
     "description": "an element self closed"
-  }
+  },
+  "jsx elements map": {
+		"prefix": "jm",
+		"body": "{${1:array}.map((item) => <${2:elementName} key={item.id}>\n\t$0\n</${2}>)}",
+		"description": "an element self closed"
+	},
+	"jsx elements map with return": {
+		"prefix": "jmr",
+		"body": "{${1:array}.map((item) => {\n\treturn <${2:elementName} key={item.id}>\n\t$0\n</${2}>\n})}",
+		"description": "an element self closed"
+	},
+  "jsx element wrap selection": {
+		"prefix": "jsx wrap selection with element",
+		"body": "<${1:elementName}>\n\t{$TM_SELECTED_TEXT}\n</${1}>",
+		"description": "an element"
+	},
 }
