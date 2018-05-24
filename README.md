@@ -945,6 +945,7 @@ If you're not writing react, including them should not really bother you because
 
 These were taken from https://github.com/TimonVS/vscode-react-standard because the maintainer wasn't able to publish a new version for months even when there was a considerable flaw in the released version.
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
+
 | Trigger  | Content                                                          |
 |----------|------------------------------------------------------------------|
 | `j→`     | jsx element                                                      |
