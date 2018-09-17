@@ -12,6 +12,9 @@
   "engines": {
     "vscode": "0.10.x"
   },
+  "scripts": {
+    "pub": "vsce publish"
+  },
   "author": "capajj@gmail.com",
   "license": "MIT",
   "bugs": {
