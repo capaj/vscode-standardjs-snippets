@@ -1,4 +1,12 @@
 {
+  "destructuring of props": {
+    "prefix": "dp",
+    "body": ["const { ${1:name} } = this.props"]
+  },
+  "destructuring of state": {
+    "prefix": "ds",
+    "body": ["const { ${1:name} } = this.state"]
+  },
   "reactClassCompoment": {
     "prefix": "rcc",
     "body": "import React, { Component } from 'react'\n\nclass ${1:componentName} extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default ${1}",

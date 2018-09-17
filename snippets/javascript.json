@@ -236,7 +236,7 @@
   },
   "const statement from destructuring": {
     "prefix": "cd",
-    "body": ["const {${1:name}} = ${2:value}", "$0"]
+    "body": "const { ${1:name} } = ${2:value}"
   },
   "const assignment awaited": {
     "prefix": "ca",
