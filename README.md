@@ -947,8 +947,10 @@ These were taken from https://github.com/TimonVS/vscode-react-standard because t
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
 | Trigger  | Content                                                          |
-|----------|------------------------------------------------------------------|
+| -------- | ---------------------------------------------------------------- |
 | `j→`     | jsx element                                                      |
+| `dp→`    | destructuring of props                                           |
+| `ds→`    | destructuring of props                                           |
 | `jc→`    | jsx self-closed element                                          |
 | `jm→`    | `jsx elements map`                                               |
 | `jmr→`   | `jsx elements map with return`                                   |
@@ -987,35 +989,35 @@ Every snippet regarding prop types begins with `pt` so it's easy to group it all
 On top of that each prop type snippets has one equivalent when we need to declare that this property is also required.
 For example `pta` creates the `PropTypes.array` and `ptar` creates the `PropTypes.array.isRequired`
 
-|  Trigger | Content                                                                              |
+| Trigger  | Content                                                                              |
 | -------: | ------------------------------------------------------------------------------------ |
-|   `pta→` | `PropTypes.array,`                                                                   |
-|  `ptar→` | `PropTypes.array.isRequired,`                                                        |
-|   `ptb→` | `PropTypes.bool,`                                                                    |
-|  `ptbr→` | `PropTypes.bool.isRequired,`                                                         |
-|   `ptf→` | `PropTypes.func,`                                                                    |
-|  `ptfr→` | `PropTypes.func.isRequired,`                                                         |
-|   `ptn→` | `PropTypes.number,`                                                                  |
-|  `ptnr→` | `PropTypes.number.isRequired,`                                                       |
-|   `pto→` | `PropTypes.object.,`                                                                 |
-|  `ptor→` | `PropTypes.object.isRequired,`                                                       |
-|   `pts→` | `PropTypes.string,`                                                                  |
-|  `ptsr→` | `PropTypes.string.isRequired,`                                                       |
-|  `ptnd→` | `PropTypes.node,`                                                                    |
+| `pta→`   | `PropTypes.array,`                                                                   |
+| `ptar→`  | `PropTypes.array.isRequired,`                                                        |
+| `ptb→`   | `PropTypes.bool,`                                                                    |
+| `ptbr→`  | `PropTypes.bool.isRequired,`                                                         |
+| `ptf→`   | `PropTypes.func,`                                                                    |
+| `ptfr→`  | `PropTypes.func.isRequired,`                                                         |
+| `ptn→`   | `PropTypes.number,`                                                                  |
+| `ptnr→`  | `PropTypes.number.isRequired,`                                                       |
+| `pto→`   | `PropTypes.object.,`                                                                 |
+| `ptor→`  | `PropTypes.object.isRequired,`                                                       |
+| `pts→`   | `PropTypes.string,`                                                                  |
+| `ptsr→`  | `PropTypes.string.isRequired,`                                                       |
+| `ptnd→`  | `PropTypes.node,`                                                                    |
 | `ptndr→` | `PropTypes.node.isRequired,`                                                         |
-|  `ptel→` | `PropTypes.element,`                                                                 |
+| `ptel→`  | `PropTypes.element,`                                                                 |
 | `ptelr→` | `PropTypes.element.isRequired,`                                                      |
-|   `pti→` | `PropTypes.instanceOf(ClassName),`                                                   |
-|  `ptir→` | `PropTypes.instanceOf(ClassName).isRequired,`                                        |
-|   `pte→` | `PropTypes.oneOf(['News', 'Photos']),`                                               |
-|  `pter→` | `PropTypes.oneOf(['News', 'Photos']).isRequired,`                                    |
-|  `ptet→` | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]),`                         |
+| `pti→`   | `PropTypes.instanceOf(ClassName),`                                                   |
+| `ptir→`  | `PropTypes.instanceOf(ClassName).isRequired,`                                        |
+| `pte→`   | `PropTypes.oneOf(['News', 'Photos']),`                                               |
+| `pter→`  | `PropTypes.oneOf(['News', 'Photos']).isRequired,`                                    |
+| `ptet→`  | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]),`                         |
 | `ptetr→` | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,`              |
-|  `ptao→` | `PropTypes.arrayOf(PropTypes.number),`                                               |
+| `ptao→`  | `PropTypes.arrayOf(PropTypes.number),`                                               |
 | `ptaor→` | `PropTypes.arrayOf(PropTypes.number).isRequired,`                                    |
-|  `ptoo→` | `PropTypes.objectOf(PropTypes.number),`                                              |
+| `ptoo→`  | `PropTypes.objectOf(PropTypes.number),`                                              |
 | `ptoor→` | `PropTypes.objectOf(PropTypes.number).isRequired,`                                   |
-|  `ptsh→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),`            |
+| `ptsh→`  | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),`            |
 | `ptshr→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |
 
 
