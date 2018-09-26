@@ -489,6 +489,14 @@
     "prefix": "og",
     "body": "Object.getOwnPropertyDescriptor(${1:obj}, '${2:prop}')"
   },
+  "ternary": {
+    "prefix": "te",
+    "body": "${1:cond} ? ${2:true} : ${3:false}"
+  },
+  "ternary assignment": {
+    "prefix": "ta",
+    "body": "const ${0} = ${1:cond} ? ${2:true} : ${3:false}"
+  },
   "Object.defineProperty": {
     "prefix": "od",
     "body": "Object.defineProperty(${1:dest}, '${2:prop}', {\n\t${0}\n})"

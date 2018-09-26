@@ -112,6 +112,18 @@ if (${1:condition}) {
 }
 ```
 
+#### `te⇥` ternary statement
+
+```js
+${1:cond} ? ${2:true} : ${3: false}
+```
+
+#### `ta⇥` ternary statement
+
+```js
+const ${0} = ${1:cond} ? ${2:true} : ${3: false}
+```
+
 #### `el⇥` else statement
 
 ```js
