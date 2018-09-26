@@ -119,13 +119,13 @@
   },
 
   "componentProps": {
-    "prefix": "props",
+    "prefix": "tp",
     "body": "this.props.$0",
     "description": "Access component's props"
   },
 
   "componentState": {
-    "prefix": "state",
+    "prefix": "ts",
     "body": "this.state.$0",
     "description": "Access component's state"
   },

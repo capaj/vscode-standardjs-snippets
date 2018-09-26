@@ -301,8 +301,12 @@
     "body": "import {$1} from '${2:module}'"
   },
   "typeof": {
-    "prefix": "t",
+    "prefix": "to",
     "body": "typeof ${1:source} === '${2:undefined}'"
+  },
+  "this": {
+    "prefix": "t",
+    "body": "this."
   },
   "instanceof": {
     "prefix": "iof",
