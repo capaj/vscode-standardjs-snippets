@@ -532,5 +532,15 @@
   "return promise": {
     "prefix": "rp",
     "body": "return new Promise((resolve, reject) => {\n\t${0}\n})"
-  }
+  },
+  "wrap selection in arrow function": {
+		"prefix": "wrap selection in arrow function",
+		"body": "() => {\n\t{$TM_SELECTED_TEXT}\n}",
+		"description": "wraps text in arrow function"
+	},
+  "wrap selection in async arrow function": {
+		"prefix": "wrap selection in async arrow function",
+		"body": "async () => {\n\t{$TM_SELECTED_TEXT}\n}",
+		"description": "wraps text in arrow function"
+	}
 }

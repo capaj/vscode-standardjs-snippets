@@ -306,5 +306,5 @@
 		"prefix": "jsx wrap selection with element",
 		"body": "<${1:elementName}>\n\t{$TM_SELECTED_TEXT}\n</${1}>",
 		"description": "an element"
-	},
+	}
 }
