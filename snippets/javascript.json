@@ -242,6 +242,10 @@
     "prefix": "ca",
     "body": "const ${1:name} = await ${2:value}"
   },
+  "const arrow function assignment": {
+    "prefix": "cf",
+    "body": "const ${1:name} = (${2:arguments}) => {\n\treturn ${0}\n}"
+  },
   "let assignment awaited": {
     "prefix": "la",
     "body": "let ${1:name} = await ${2:value}"

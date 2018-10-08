@@ -96,6 +96,12 @@ const {${1:name}} = ${2:value}
 const ${1:name} = await ${2:value}
 ```
 
+#### `cf⇥` const arrow function assignment
+
+```js
+const ${1:name} = (${2:arguments}) => {\n\treturn ${0}\n}
+```
+
 #### `cy⇥` const yielded assignment
 
 ```js
