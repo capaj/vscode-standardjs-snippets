@@ -465,6 +465,12 @@ ${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {
 Object.keys(${1:obj})
 ```
 
+#### `ov` Object.values
+
+```js
+Object.values(${1:obj})
+```
+
 #### `oc` Object.create
 
 ```js

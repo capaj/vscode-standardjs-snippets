@@ -509,6 +509,10 @@
     "prefix": "ok",
     "body": "Object.keys(${1:obj})"
   },
+  "Object.values": {
+    "prefix": "ov",
+    "body": "Object.values(${1:obj})"
+  },
   "return": {
     "prefix": "r",
     "body": "return ${0}"
