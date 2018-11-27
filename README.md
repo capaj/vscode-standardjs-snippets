@@ -177,7 +177,7 @@ for (let ${1:key} in ${2:source}) {
 #### `fo⇥` for of loop (ES6)
 
 ```js
-for (let ${1:key} of ${2:source}) {
+for (const ${1:key} of ${2:source}) {
   ${0}
 }
 ```
