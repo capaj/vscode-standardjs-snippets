@@ -962,9 +962,11 @@ console.dir(${0})
 
 ## React snippets
 
+Are only enabled in `jsx` or `tsx` files. If you write your jsx in `js` files, you need to copy the `react.json` files manually and add it to your custom snippets.
+
 ### Why do we include them here?
 
-If you're not writing react, including them should not really bother you because they are not short as the regular JS snippets. ALso IMHO react is the leading solution for FE apps deserves to be included by default, because any JS dev will have to write some react eventually over the course of his/her careeer. By having them in a single package we can easily make sure --there aren't any conflicts in the trigger prefixes.
+If you're not writing react, including them should not really bother you because they are not short as the regular JS snippets. Also IMHO react is the leading solution for FE apps deserves to be included by default, because any JS dev will have to write some react eventually over the course of his/her careeer. By having them in a single package we can easily make sure --there aren't any conflicts in the trigger prefixes.
 
 ### Supported languages (file extensions)
 
@@ -977,7 +979,7 @@ These were taken from https://github.com/TimonVS/vscode-react-standard because t
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
 | Trigger | Content                                                          |
-| ------- | ---------------------------------------------------------------- |
+|---------|------------------------------------------------------------------|
 | `j→`    | jsx element                                                      |
 | `dp→`   | destructuring of props                                           |
 | `ds→`   | destructuring of props                                           |
@@ -1020,7 +1022,7 @@ On top of that each prop type snippets has one equivalent when we need to declar
 For example `pta` creates the `PropTypes.array` and `ptar` creates the `PropTypes.array.isRequired`
 
 | Trigger  | Content                                                                              |
-| -------: | ------------------------------------------------------------------------------------ |
+|----------|--------------------------------------------------------------------------------------|
 | `pta→`   | `PropTypes.array,`                                                                   |
 | `ptar→`  | `PropTypes.array.isRequired,`                                                        |
 | `ptb→`   | `PropTypes.bool,`                                                                    |
