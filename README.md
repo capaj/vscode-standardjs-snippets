@@ -925,7 +925,7 @@ await Promise.all(${1:value})
 #### `apm⇥` Promise.all map
 
 ```js
-await Promise.all(${1:array}.map((${2:value}) => {\n\t${0}\n}))
+await Promise.all(${1:array}.map((async ${2:value}) => {\n\t${0}\n}))
 ```
 
 ### Console
@@ -979,7 +979,7 @@ These were taken from https://github.com/TimonVS/vscode-react-standard because t
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
 | Trigger | Content                                                          |
-|---------|------------------------------------------------------------------|
+| ------- | ---------------------------------------------------------------- |
 | `j→`    | jsx element                                                      |
 | `dp→`   | destructuring of props                                           |
 | `ds→`   | destructuring of props                                           |
@@ -1022,7 +1022,7 @@ On top of that each prop type snippets has one equivalent when we need to declar
 For example `pta` creates the `PropTypes.array` and `ptar` creates the `PropTypes.array.isRequired`
 
 | Trigger  | Content                                                                              |
-|----------|--------------------------------------------------------------------------------------|
+| -------- | ------------------------------------------------------------------------------------ |
 | `pta→`   | `PropTypes.array,`                                                                   |
 | `ptar→`  | `PropTypes.array.isRequired,`                                                        |
 | `ptb→`   | `PropTypes.bool,`                                                                    |
