@@ -18,7 +18,7 @@ This collection is complementary to [atom/language-javascript](https://github.co
 
 ## Making the snippets top priority
 
-I mostly prefer snippets to have the top priority in the autocompletion. This is not a default settingm but can be enabled by:
+I mostly prefer snippets to have the top priority in the autocompletion. This is not a default settings but can be enabled by:
 
 ```
 "editor.snippetSuggestions": "top",
