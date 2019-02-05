@@ -233,7 +233,7 @@
     },
     "const statement from destructuring": {
         "prefix": "cd",
-        "body": "const { ${1:name} } = ${2:value}"
+        "body": "const { ${2:prop} } = ${1:value}"
     },
     "const assignment awaited": {
         "prefix": "ca",
@@ -297,7 +297,7 @@
     },
     "import module destructured": {
         "prefix": "id",
-        "body": "import {$1} from '${2:module}'"
+        "body": "import {$2} from '${1:module}'"
     },
     "typeof": {
         "prefix": "to",

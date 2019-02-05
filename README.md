@@ -16,16 +16,6 @@ This collection is complementary to [atom/language-javascript](https://github.co
 * [An Open Letter to JavaScript Leaders Regarding Semicolons](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding)
 * [JavaScript Semicolon Insertion - Everything You Need to Know](http://inimino.org/~inimino/blog/javascript_semicolons)
 
-## Making the snippets top priority
-
-I mostly prefer snippets to have the top priority in the autocompletion. This is not a default settingm but can be enabled by:
-
-```
-"editor.snippetSuggestions": "top",
-```
-
-in your settings.json. Otherwise vscode prefers keywords on the top.
-
 ## Snippets
 
 Snippets are optimized to be short and easy to remember. Shortest are the ones you should be using most often. Note that these links work only on github, not on VSCode marketplace:
