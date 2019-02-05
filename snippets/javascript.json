@@ -289,11 +289,11 @@
     },
     "import module": {
         "prefix": "im",
-        "body": "import ${1:*} from '${2:module}'"
+        "body": "import ${2:*} from '${1:module}'"
     },
     "import module as": {
         "prefix": "ia",
-        "body": "import ${1:*} as ${2:name} from '${3:module}'"
+        "body": "import ${2:*} as ${3:name} from '${1:module}'"
     },
     "import module destructured": {
         "prefix": "id",
