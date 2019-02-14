@@ -613,6 +613,12 @@ export default function ${1:name} (${2:arguments}) {\n\t${0}\n}
 export const ${1:member} = ${2:value}
 ```
 
+#### `ef⇥` module export const
+
+```js
+export function ${1:member} (${2:arguments}) {\n\t${0}\n}
+```
+
 #### `im⇥` module import
 
 ```js
@@ -969,7 +975,7 @@ These were taken from https://github.com/TimonVS/vscode-react-standard because t
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
 | Trigger | Content                                                          |
-| ------- | ---------------------------------------------------------------- |
+|---------|------------------------------------------------------------------|
 | `j→`    | jsx element                                                      |
 | `dp→`   | destructuring of props                                           |
 | `ds→`   | destructuring of props                                           |
@@ -1012,7 +1018,7 @@ On top of that each prop type snippets has one equivalent when we need to declar
 For example `pta` creates the `PropTypes.array` and `ptar` creates the `PropTypes.array.isRequired`
 
 | Trigger  | Content                                                                              |
-| -------- | ------------------------------------------------------------------------------------ |
+|----------|--------------------------------------------------------------------------------------|
 | `pta→`   | `PropTypes.array,`                                                                   |
 | `ptar→`  | `PropTypes.array.isRequired,`                                                        |
 | `ptb→`   | `PropTypes.bool,`                                                                    |

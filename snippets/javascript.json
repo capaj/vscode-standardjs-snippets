@@ -279,6 +279,10 @@
         "prefix": "ec",
         "body": "export const ${1:member} = ${2:value}"
     },
+    "export named function": {
+        "prefix": "ef",
+        "body": "export function ${1:member} (${2:arguments}) {\n\t${0}\n}"
+    },
     "module default export": {
         "prefix": "ed",
         "body": "export default ${1:member}"
