@@ -12,29 +12,29 @@ This collection is complementary to [atom/language-javascript](https://github.co
 
 **Yes!, no semicolons:**
 
-* [Are Semicolons Necessary in JavaScript?](https://www.youtube.com/watch?v=gsfbh17Ax9I)
-* [An Open Letter to JavaScript Leaders Regarding Semicolons](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding)
-* [JavaScript Semicolon Insertion - Everything You Need to Know](http://inimino.org/~inimino/blog/javascript_semicolons)
+- [Are Semicolons Necessary in JavaScript?](https://www.youtube.com/watch?v=gsfbh17Ax9I)
+- [An Open Letter to JavaScript Leaders Regarding Semicolons](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding)
+- [JavaScript Semicolon Insertion - Everything You Need to Know](http://inimino.org/~inimino/blog/javascript_semicolons)
 
 ## Snippets
 
 Snippets are optimized to be short and easy to remember. Shortest are the ones you should be using most often. Note that these links work only on github, not on VSCode marketplace:
 
-* [declarations](#declarations)
-* [flow control](#flow-control)
-* [functions](#functions)
-* [iterables](#iterables)
-* [objects and classes](#objects-and-classes)
-* [returning values](#returning-values)
-* [types](#types)
-* [promises](#promises)
-* [ES6 modules](#es6-modules)
-* [testing](#testing)
-* [console](#console)
-* [timers](#timers)
-* [DOM](#dom)
-* [Node.js](#nodejs)
-* [miscellaneous](#miscellaneous)
+- [declarations](#declarations)
+- [flow control](#flow-control)
+- [functions](#functions)
+- [iterables](#iterables)
+- [objects and classes](#objects-and-classes)
+- [returning values](#returning-values)
+- [types](#types)
+- [promises](#promises)
+- [ES6 modules](#es6-modules)
+- [testing](#testing)
+- [console](#console)
+- [timers](#timers)
+- [DOM](#dom)
+- [Node.js](#nodejs)
+- [miscellaneous](#miscellaneous)
 
 ### Declarations
 
@@ -77,13 +77,20 @@ const ${1:name}
 #### `cd⇥` const from destructuring
 
 ```js
-const {${1:name}} = ${2:value}
+const { ${1:name} } = ${2:value}
 ```
 
 #### `ca⇥` const assignment awaited
 
 ```js
 const ${1:name} = await ${2:value}
+```
+
+#### `cd⇥` const from destructuring awaited
+
+```js
+const { ${1:name} } = await ${2:value}
+
 ```
 
 #### `cf⇥` const arrow function assignment
@@ -498,13 +505,13 @@ return ${0}
 #### `rt⇥` return this
 
 ```js
-return this
+return this;
 ```
 
 #### `rn⇥` return null
 
 ```js
-return null
+return null;
 ```
 
 #### `ro⇥` return new object
@@ -634,7 +641,7 @@ import ${1:*} as ${2:name} from '${3:module}'
 #### `id⇥` module import destructuring
 
 ```js
-import { $1 } from '${2:module}'
+import { $1 } from "${2:module}";
 ```
 
 ### BDD testing (Mocha, Jasmine, etc.)
@@ -748,9 +755,9 @@ ${1:document}.removeEventListener('${2:event}', ${3:listener})
 #### `evc` dom event cancel default and propagation
 
 ```js
-ev.preventDefault()
-ev.stopPropagation()
-return false
+ev.preventDefault();
+ev.stopPropagation();
+return false;
 ```
 
 #### `gi⇥` getElementById
@@ -857,7 +864,7 @@ function (err, ${1:value}) {
 #### `rq⇥` require a module
 
 ```js
-require('${1:module}')
+require("${1:module}");
 ```
 
 #### `cr⇥` require and assign a module
@@ -891,19 +898,19 @@ ${1:emitter}.on('${2:event}', (${3:arguments}) => {
 #### `us⇥` use strict
 
 ```js
-'use strict'
+"use strict";
 ```
 
 #### `js⇥` JSON Stringify
 
 ```js
-JSON.stringify($0)
+JSON.stringify($0);
 ```
 
 #### `jp⇥` JSON Parse
 
 ```js
-JSON.parse($0)
+JSON.parse($0);
 ```
 
 #### `a⇥` await
@@ -966,16 +973,16 @@ If you're not writing react, including them should not really bother you because
 
 ### Supported languages (file extensions)
 
-* JavaScript (.js)
-* TypeScript (.ts)
-* JavaScript React (.jsx)
-* TypeScript React (.tsx)
+- JavaScript (.js)
+- TypeScript (.ts)
+- JavaScript React (.jsx)
+- TypeScript React (.tsx)
 
 These were taken from https://github.com/TimonVS/vscode-react-standard because the maintainer wasn't able to publish a new version for months even when there was a considerable flaw in the released version.
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
 | Trigger | Content                                                          |
-|---------|------------------------------------------------------------------|
+| ------- | ---------------------------------------------------------------- |
 | `j→`    | jsx element                                                      |
 | `dp→`   | destructuring of props                                           |
 | `ds→`   | destructuring of props                                           |
@@ -1008,6 +1015,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `bnd→`  | `binds the this of method inside the constructor`                |
 
 There are also snippets to be triggered with a text selection(trigger via insert snippet command):
+
 ```
 jsx element wrap selection
 ```
@@ -1018,7 +1026,7 @@ On top of that each prop type snippets has one equivalent when we need to declar
 For example `pta` creates the `PropTypes.array` and `ptar` creates the `PropTypes.array.isRequired`
 
 | Trigger  | Content                                                                              |
-|----------|--------------------------------------------------------------------------------------|
+| -------- | ------------------------------------------------------------------------------------ |
 | `pta→`   | `PropTypes.array,`                                                                   |
 | `ptar→`  | `PropTypes.array.isRequired,`                                                        |
 | `ptb→`   | `PropTypes.bool,`                                                                    |
@@ -1047,5 +1055,3 @@ For example `pta` creates the `PropTypes.array` and `ptar` creates the `PropType
 | `ptoor→` | `PropTypes.objectOf(PropTypes.number).isRequired,`                                   |
 | `ptsh→`  | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),`            |
 | `ptshr→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |
-
-
