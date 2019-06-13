@@ -1,0 +1,16 @@
+{
+  "useQuery": {
+    "prefix": "uq",
+    "body": ["const { data, loading } = useQuery(gql`${1:query}`)"],
+    "description": "useQuery"
+  },
+  "useMutation": {
+    "prefix": "um",
+    "body": [
+      "const ${1:mutationName} = useMutation(gql`${1:query}`, {",
+      "  variables: ${1:vars},",
+      "});"
+    ],
+    "description": "useMutation"
+  }
+}

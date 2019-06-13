@@ -505,13 +505,13 @@ return ${0}
 #### `rt⇥` return this
 
 ```js
-return this;
+return this
 ```
 
 #### `rn⇥` return null
 
 ```js
-return null;
+return null
 ```
 
 #### `ro⇥` return new object
@@ -641,7 +641,7 @@ import ${1:*} as ${2:name} from '${3:module}'
 #### `id⇥` module import destructuring
 
 ```js
-import { $1 } from "${2:module}";
+import { $1 } from '${2:module}'
 ```
 
 ### BDD testing (Mocha, Jasmine, etc.)
@@ -755,9 +755,9 @@ ${1:document}.removeEventListener('${2:event}', ${3:listener})
 #### `evc` dom event cancel default and propagation
 
 ```js
-ev.preventDefault();
-ev.stopPropagation();
-return false;
+ev.preventDefault()
+ev.stopPropagation()
+return false
 ```
 
 #### `gi⇥` getElementById
@@ -864,7 +864,7 @@ function (err, ${1:value}) {
 #### `rq⇥` require a module
 
 ```js
-require("${1:module}");
+require('${1:module}')
 ```
 
 #### `cr⇥` require and assign a module
@@ -895,22 +895,22 @@ ${1:emitter}.on('${2:event}', (${3:arguments}) => {
 
 ### Miscellaneous
 
-#### `us⇥` use strict
+#### `uss⇥` use strict
 
 ```js
-"use strict";
+'use strict'
 ```
 
 #### `js⇥` JSON Stringify
 
 ```js
-JSON.stringify($0);
+JSON.stringify($0)
 ```
 
 #### `jp⇥` JSON Parse
 
 ```js
-JSON.parse($0);
+JSON.parse($0)
 ```
 
 #### `a⇥` await
@@ -1012,7 +1012,14 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `ssf→`  | `this.setState with function as parameter`                       |
 | `tp`    | `this.props`                                                     |
 | `ts`    | `this.state`                                                     |
-| `bnd→`  | `binds the this of method inside the constructor`                |
+| `us`    | `useState`                                                       |
+| `ue`    | `useEffect`                                                      |
+| `ur`    | `useRef`                                                         |
+| `uc`    | `useContext`                                                     |
+| `ume`   | `useMemo`                                                        |
+| ------- | ---------------------------------------------------------------- |
+| `uq`    | `useQuery`                                                       |
+| `um`    | `useMutation`                                                    |
 
 There are also snippets to be triggered with a text selection(trigger via insert snippet command):
 

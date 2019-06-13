@@ -239,6 +239,10 @@
     "prefix": "cd",
     "body": "const { ${2:prop} } = ${1:value}"
   },
+  "const statement from array destructuring": {
+    "prefix": "cad",
+    "body": "const [ ${2:prop} ] = ${1:value}"
+  },
   "const assignment awaited": {
     "prefix": "ca",
     "body": "const ${1:name} = await ${2:value}"
@@ -452,7 +456,7 @@
     "body": "constructor () {\n\t${0}\n}"
   },
   "use strict": {
-    "prefix": "us",
+    "prefix": "uss",
     "body": "'use strict'"
   },
   "JSON.stringify()": {
