@@ -61,7 +61,7 @@
   },
   "describe": {
     "prefix": "desc",
-    "body": "describe('${1:description}', function () {\n\t${0}\n})"
+    "body": "describe('${1:description}', () => {\n\t${0}\n})"
   },
   "it asynchronous": {
     "prefix": "it",
