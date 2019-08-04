@@ -468,6 +468,12 @@ Object.keys(${1:obj})
 Object.values(${1:obj})
 ```
 
+#### `oe` Object.entries
+
+```js
+Object.entries(${1:obj})
+```
+
 #### `oc` Object.create
 
 ```js
