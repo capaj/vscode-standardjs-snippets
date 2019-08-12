@@ -993,8 +993,8 @@ Below is a list of all available snippets and the triggers of each one.
 | `rccp`  | class component skeleton with prop types after the class         |
 | `rcjc`  | class component skeleton without import and default export lines |
 | `rcfc`  | class component skeleton that contains all the lifecycle methods |
-| `rsc`   | stateless component skeleton                                     |
-| `rscp`  | stateless component with prop types skeleton                     |
+| `rfc`   | stateless component skeleton                                     |
+| `rfcp`  | stateless component with prop types skeleton                     |
 | `rpt`   | empty propTypes declaration                                      |
 | `con`   | class default constructor with props                             |
 | `conc`  | class default constructor with props and context                 |

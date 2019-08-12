@@ -3,7 +3,7 @@
   "displayName": "JavaScript standardjs styled snippets",
   "publisher": "capaj",
   "icon": "images/javascript.png",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "standardjs styled javascript snippets for visual studio code",
   "repository": {
     "type": "git",
@@ -48,7 +48,7 @@
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/react.json"
+        "path": "./snippets/react-ts.json"
       },
       {
         "language": "javascriptreact",
