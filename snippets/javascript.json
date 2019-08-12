@@ -519,6 +519,10 @@
     "prefix": "ov",
     "body": "Object.values(${1:obj})"
   },
+  "Object.entries": {
+    "prefix": "oe",
+    "body": "Object.entries(${1:obj})"
+  },
   "return": {
     "prefix": "r",
     "body": "return ${0}"
