@@ -407,6 +407,10 @@
     "prefix": "iife",
     "body": ";(function (${1:arguments}) {\n\t${0}\n})(${2})"
   },
+  "async immediately-invoked function expression": {
+    "prefix": "aiife",
+    "body": ";(async (${1:arguments}) => {\n\t${0}\n})(${2})"
+  },
   "arrow function": {
     "prefix": "af",
     "body": "(${1:arguments}) => ${2:statement}"
