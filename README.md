@@ -292,12 +292,16 @@ ${1:fn}.bind(${2:this}, ${3:arguments})
 (${1:arguments}) => ${2:statement}
 ```
 
-#### `fd⇥` arrow function with body (ES6)
+#### `fd⇥` arrow function with destructuring
 
 ```js
-({${1:arguments}}) => {
-  ${0}
-}
+({${1:arguments}}) => ${2:statement}
+```
+
+#### `fdr⇥` arrow function with destructuring returning destructured
+
+```js
+({${1:arguments}}) => ${1:arguments}
 ```
 
 #### `f⇥` arrow function with body (ES6)
