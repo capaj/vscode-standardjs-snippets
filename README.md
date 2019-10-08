@@ -268,6 +268,14 @@ async (${1:arguments}) => {
 })(${2})
 ```
 
+#### `aiife⇥` async immediately-invoked function expression
+
+```js
+;(async (${1:arguments}) => {
+  ${0}
+})(${2})
+```
+
 #### `fa⇥` function apply
 
 ```js
