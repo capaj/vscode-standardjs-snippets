@@ -274,6 +274,14 @@
   "const array": {
     "prefix": "car",
     "body": "const ${1:name} = [\n\t${0}\n]"
+  },  
+  "generate array of integers starting with 1": {
+    "prefix": "gari",
+    "body": "Array.from({ length: ${1:length} }, (v, k) => k + 1)"
+  },
+  "generate array of integers starting with 0": {
+    "prefix": "gari0",
+    "body": "[...Array(${1:length}).keys()]"
   },
   "class": {
     "prefix": "cs",
