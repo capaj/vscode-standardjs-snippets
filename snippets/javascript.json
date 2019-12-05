@@ -19,6 +19,10 @@
     "prefix": "apa",
     "body": "await Promise.all(${1:value})"
   },
+  "await Promise.all with destructuring": {
+    "prefix": "apad",
+    "body": "const [${0}] = await Promise.all(${1:value})"
+  },
   "await Promise.all map": {
     "prefix": "apm",
     "body": "await Promise.all(${1:array}.map((async ${2:value}) => {\n\t${0}\n}))"
