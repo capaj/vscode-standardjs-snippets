@@ -71,6 +71,10 @@
     "prefix": "it",
     "body": "it('${1:description}', async () => {\n\t${0}\n})"
   },
+  "it.todo": {
+    "prefix": "itt",
+    "body": "it.todo('${1:description}')"
+  },
   "it with a callback": {
     "prefix": "itd",
     "body": "it('${1:description}', (done) => {\n\t${0}\n})"
