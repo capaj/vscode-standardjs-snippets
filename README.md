@@ -1036,8 +1036,11 @@ Below is a list of all available snippets and the triggers of each one.
 | `uc`    | `useContext`                                                     |
 | `ume`   | `useMemo`                                                        |
 | ------- | ---------------------------------------------------------------- |
-| `uq`    | `useQuery`                                                       |
-| `um`    | `useMutation`                                                    |
+| `uq`    | `useQuery` to be used with graphql-codegen                       |
+| `um`    | `useMutation` to be used with graphql-codegen                    |
+| `uqg`   | `useQuery with raw gql`                                          |
+| `umg`   | `useMutation with raw gql`                                       |
+
 
 There are also snippets to be triggered with a text selection(trigger via insert snippet command):
 
