@@ -3,6 +3,11 @@
     "prefix": "uq",
     "body": ["const { data, loading } = use${1:query}Query()"],
     "description": "useQuery"
+  },  
+  "useQuery for component": {
+    "prefix": "uqc",
+    "body": ["const { data, loading } = use${TM_FILENAME_BASE}Query()"],
+    "description": "useQuery that loads up data for current component"
   },
   "useMutation": {
     "prefix": "um",

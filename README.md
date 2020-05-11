@@ -1037,6 +1037,7 @@ Below is a list of all available snippets and the triggers of each one.
 | `ume`   | `useMemo`                                                        |
 | ------- | ---------------------------------------------------------------- |
 | `uq`    | `useQuery` to be used with graphql-codegen                       |
+| `uqc`    | `useQuery` that loads up data for current component, to be used with graphql-codegen                        |
 | `um`    | `useMutation` to be used with graphql-codegen                    |
 | `uqg`   | `useQuery with raw gql`                                          |
 | `umg`   | `useMutation with raw gql`                                       |
