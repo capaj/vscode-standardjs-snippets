@@ -999,49 +999,49 @@ If you're not writing react, including them should not really bother you because
 These were originally taken from https://github.com/TimonVS/vscode-react-standard because the maintainer wasn't able to publish a new version for months even when there was a considerable flaw in the released version.
 Below is a list of all available snippets and the triggers of each one.
 
-| Trigger | Content                                                          |
-| ------- | ---------------------------------------------------------------- |
-| `j`     | jsx element                                                      |
-| `dp`    | destructuring of props                                           |
-| `ds`    | destructuring of props                                           |
-| `jc`    | jsx self-closed element                                          |
-| `jm`    | `jsx elements map`                                               |
-| `jmr`   | `jsx elements map with return`                                   |
-| `rcc`   | class component skeleton                                         |
-| `rccp`  | class component skeleton with prop types after the class         |
-| `rcjc`  | class component skeleton without import and default export lines |
-| `rcfc`  | class component skeleton that contains all the lifecycle methods |
-| `rfc`   | stateless component skeleton                                     |
-| `rfcp`  | stateless component with prop types skeleton                     |
-| `rpt`   | empty propTypes declaration                                      |
-| `con`   | class default constructor with props                             |
-| `conc`  | class default constructor with props and context                 |
-| `est`   | empty state object                                               |
-| `cwm`   | `componentWillMount method`                                      |
-| `cdm`   | `componentDidMount method`                                       |
-| `cwr`   | `componentWillReceiveProps method`                               |
-| `cgd`   | `componentGetDerivedStateFromProps method`                       |
-| `scu`   | `shouldComponentUpdate method`                                   |
-| `cwup`  | `componentWillUpdate method`                                     |
-| `cdup`  | `componentDidUpdate method`                                      |
-| `cwun`  | `componentWillUnmount method`                                    |
-| `ren`   | `render method`                                                  |
-| `sst`   | `this.setState with object as parameter`                         |
-| `ssf`   | `this.setState with function as parameter`                       |
-| `tp`    | `this.props`                                                     |
-| `ts`    | `this.state`                                                     |
-| `us`    | `useState`                                                       |
-| `ue`    | `useEffect`                                                      |
-| `ur`    | `useRef`                                                         |
-| `uc`    | `useContext`                                                     |
-| `ume`   | `useMemo`                                                        |
-| ------- | ---------------------------------------------------------------- |
-| `uq`    | `useQuery` to be used with graphql-codegen                       |
-| `uqc`    | `useQuery` that loads up data for current component, to be used with graphql-codegen                        |
-| `um`    | `useMutation` to be used with graphql-codegen                    |
-| `uqg`   | `useQuery with raw gql`                                          |
-| `umg`   | `useMutation with raw gql`                                       |
-
+| Trigger | Content                                                                              |
+| ------- | ------------------------------------------------------------------------------------ |
+| `j`     | jsx element                                                                          |
+| `dp`    | destructuring of props                                                               |
+| `ds`    | destructuring of props                                                               |
+| `jc`    | jsx self-closed element                                                              |
+| `jm`    | `jsx elements map`                                                                   |
+| `jmr`   | `jsx elements map with return`                                                       |
+| `rcc`   | class component skeleton                                                             |
+| `rccp`  | class component skeleton with prop types after the class                             |
+| `rcjc`  | class component skeleton without import and default export lines                     |
+| `rcfc`  | class component skeleton that contains all the lifecycle methods                     |
+| `rfc`   | stateless component skeleton                                                         |
+| `rfcp`  | stateless component with prop types skeleton                                         |
+| `rpt`   | empty propTypes declaration                                                          |
+| `con`   | class default constructor with props                                                 |
+| `conc`  | class default constructor with props and context                                     |
+| `est`   | empty state object                                                                   |
+| `cwm`   | `componentWillMount method`                                                          |
+| `cdm`   | `componentDidMount method`                                                           |
+| `cwr`   | `componentWillReceiveProps method`                                                   |
+| `cgd`   | `componentGetDerivedStateFromProps method`                                           |
+| `scu`   | `shouldComponentUpdate method`                                                       |
+| `cwup`  | `componentWillUpdate method`                                                         |
+| `cdup`  | `componentDidUpdate method`                                                          |
+| `cwun`  | `componentWillUnmount method`                                                        |
+| `ren`   | `render method`                                                                      |
+| `sst`   | `this.setState with object as parameter`                                             |
+| `ssf`   | `this.setState with function as parameter`                                           |
+| `tp`    | `this.props`                                                                         |
+| `ts`    | `this.state`                                                                         |
+| `us`    | `useState`                                                                           |
+| `ue`    | `useEffect`                                                                          |
+| `uec`   | `useEffect` with a cleanup function                                                  |
+| `ur`    | `useRef`                                                                             |
+| `uc`    | `useContext`                                                                         |
+| `ume`   | `useMemo`                                                                            |
+| ------- | ----------------------------------------------------------------                     |
+| `uq`    | `useQuery` to be used with graphql-codegen                                           |
+| `uqc`   | `useQuery` that loads up data for current component, to be used with graphql-codegen |
+| `um`    | `useMutation` to be used with graphql-codegen                                        |
+| `uqg`   | `useQuery with raw gql`                                                              |
+| `umg`   | `useMutation with raw gql`                                                           |
 
 There are also snippets to be triggered with a text selection(trigger via insert snippet command):
 
