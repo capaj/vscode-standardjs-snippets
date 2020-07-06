@@ -4,11 +4,11 @@ originally forked from https://github.com/gaboesquivel/atom-standardjs-snippets,
 
 ## Standard JavaScript Snippets for Visual studio code
 
-A collection of ES6 snippets for faster JavaScript development in [Visual studio Code](https://code.visualstudio.com/).
+A collection of javascript and react snippets for faster JavaScript development in [Visual studio Code](https://code.visualstudio.com/).
 
-This collection is complementary to [atom/language-javascript](https://github.com/atom/language-javascript). It's based on [extrabacon/atom-turbo-javascript](https://github.com/extrabacon/atom-turbo-javascript) and it enforces [standardjs code style](http://standardjs.com/).
+This collection is complementary to [atom/language-javascript](https://github.com/atom/language-javascript). It's based on [extrabacon/atom-turbo-javascript](https://github.com/extrabacon/atom-turbo-javascript).
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.png)](https://github.com/feross/standard)
+## Code style
 
 **Yes!, no semicolons:**
 
@@ -947,6 +947,12 @@ await Promise.all(${1:value})
 
 ```js
 await Promise.all(${1:array}.map((async ${2:value}) => {\n\t${0}\n}))
+```
+
+#### `ast⇥` Promise sleep
+
+```js
+await new Promise((r) => setTimeout(r, ${0}))
 ```
 
 ### Console
