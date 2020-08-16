@@ -25,7 +25,7 @@
   },
   "await Promise.all map": {
     "prefix": "apm",
-    "body": "await Promise.all(${1:array}.map((async ${2:value}) => {\n\t${0}\n}))"
+    "body": "await Promise.all(${1:array}.map(async (${2:value}) => {\n\t${0}\n}))"
   },
   "await sleep": {
     "prefix": "ast",
