@@ -300,6 +300,15 @@
     ],
     "description": "React useEffect() hook with a cleanup function"
   },
+  "createContext": {
+    "prefix": "cc",
+    "body": [
+      "export const $1 = createContext<$2>(",
+      "\t(null as any) as $2",
+      ")"
+    ],
+    "description": "creates a react context"
+  },
   "useContext": {
     "prefix": "uc",
     "body": ["const $1 = useContext($2)$0"],

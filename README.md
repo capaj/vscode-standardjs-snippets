@@ -820,49 +820,49 @@ ${1:document}.createDocumentFragment(${2:elem});
 ${1:document}.createElement(${2:elem});
 ```
 
-#### `ac⇥` appendChild
+#### `heac⇥` appendChild
 
 ```js
 ${1:document}.appendChild(${2:elem});
 ```
 
-#### `rc⇥` removeChild
+#### `herc⇥` removeChild
 
 ```js
 ${1:document}.removeChild(${2:elem});
 ```
 
-#### `cla⇥` classList.add
+#### `hecla⇥` classList.add
 
 ```js
 ${1:document}.classList.add('${2:class}');
 ```
 
-#### `ct⇥` classList.toggle
+#### `hect⇥` classList.toggle
 
 ```js
 ${1:document}.classList.toggle('${2:class}');
 ```
 
-#### `clr⇥` classList.remove
+#### `heclr⇥` classList.remove
 
 ```js
 ${1:document}.classList.remove('${2:class}');
 ```
 
-#### `ga⇥` getAttribute
+#### `hega⇥` getAttribute
 
 ```js
 ${1:document}.getAttribute('${2:attr}');
 ```
 
-#### `sa⇥` setAttribute
+#### `hesa⇥` setAttribute
 
 ```js
 ${1:document}.setAttribute('${2:attr}', ${3:value});
 ```
 
-#### `ra⇥` removeAttribute
+#### `hera⇥` removeAttribute
 
 ```js
 ${1:document}.removeAttribute('${2:attr}');
@@ -1040,6 +1040,7 @@ Below is a list of all available snippets and the triggers of each one.
 | `ue`    | `useEffect`                                                                          |
 | `uec`   | `useEffect` with a cleanup function                                                  |
 | `ur`    | `useRef`                                                                             |
+| `cc`    | `createContext`                                                                      |
 | `uc`    | `useContext`                                                                         |
 | `ume`   | `useMemo`                                                                            |
 | ------- | ----------------------------------------------------------------                     |

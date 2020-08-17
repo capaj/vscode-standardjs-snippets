@@ -172,35 +172,35 @@
     "body": "${1:document}.createElement(${2:elem})"
   },
   "classList.add": {
-    "prefix": "cla",
+    "prefix": "hecla",
     "body": "${1:el}.classList.add('${2:class}')"
   },
   "classList.remove": {
-    "prefix": "clr",
+    "prefix": "heclr",
     "body": "${1:el}.classList.remove('${2:class}')"
   },
   "classList.toggle": {
-    "prefix": "ct",
+    "prefix": "hect",
     "body": "${1:el}.classList.toggle('${2:class}')"
   },
   "getAttribute": {
-    "prefix": "ga",
+    "prefix": "hega",
     "body": "${1:el}.getAttribute('${2:attr}')"
   },
   "removeAttribute": {
-    "prefix": "ra",
+    "prefix": "hera",
     "body": "${1:el}.removeAttribute('${2:attr}')"
   },
   "setAttribute": {
-    "prefix": "sa",
+    "prefix": "hesa",
     "body": "${1:el}.setAttribute('${2:attr}', ${3:value})"
   },
   "appendChild": {
-    "prefix": "ac",
+    "prefix": "heac",
     "body": "${1:el}.appendChild(${2:elem})"
   },
   "removeChild": {
-    "prefix": "rc",
+    "prefix": "herc",
     "body": "${1:el}.removeChild(${2:elem})"
   },
   "forEach loop": {
