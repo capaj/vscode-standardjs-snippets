@@ -1,6 +1,6 @@
 # vscode-standardjs-snippets
 
-originally forked from https://github.com/gaboesquivel/atom-standardjs-snippets, but we've added couple more. Also these are not using special characters because vscode doesn't accept them in the snippets.
+Optinionated set of JS snippets. Originally forked from https://github.com/gaboesquivel/atom-standardjs-snippets, but we've added couple more. Also these are not using special characters because vscode doesn't accept them in the snippets.
 
 ## Standard JavaScript Snippets for Visual studio code
 
@@ -1013,11 +1013,12 @@ Below is a list of all available snippets and the triggers of each one.
 | `jc`    | jsx self-closed element                                                              |
 | `jm`    | `jsx elements map`                                                                   |
 | `jmr`   | `jsx elements map with return`                                                       |
+| `rfc`   | functional component. Prefer for 99% of new react component                          |
+| `rfce`  | functional component with emotion css import                                         |
 | `rcc`   | class component skeleton                                                             |
 | `rccp`  | class component skeleton with prop types after the class                             |
 | `rcjc`  | class component skeleton without import and default export lines                     |
 | `rcfc`  | class component skeleton that contains all the lifecycle methods                     |
-| `rfc`   | stateless component skeleton                                                         |
 | `rfcp`  | stateless component with prop types skeleton                                         |
 | `rpt`   | empty propTypes declaration                                                          |
 | `con`   | class default constructor with props                                                 |
