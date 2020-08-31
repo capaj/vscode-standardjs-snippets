@@ -532,6 +532,12 @@ return this
 return null
 ```
 
+#### `rf⇥` return arrow function
+
+```js
+return (${1:arguments}) => ${2:statement}
+```
+
 #### `ro⇥` return new object
 
 ```js
@@ -917,6 +923,7 @@ ${1:emitter}.on('${2:event}', (${3:arguments}) => {
 
 ```js
 'use strict'
+
 ```
 
 #### `js⇥` JSON Stringify

@@ -555,6 +555,10 @@
     "prefix": "r",
     "body": "return ${0}"
   },
+  "return arrow function": {
+    "prefix": "rf",
+    "body": "return (${1:arguments}) => ${2:statement}"
+  },
   "yield": {
     "prefix": "y",
     "body": "yield ${0}"
