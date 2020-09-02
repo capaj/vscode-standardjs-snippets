@@ -86,7 +86,7 @@ const { ${1:name} } = ${2:value}
 const ${1:name} = await ${2:value}
 ```
 
-#### `cd⇥` const from destructuring awaited
+#### `cda⇥` const from destructuring awaited
 
 ```js
 const { ${1:name} } = await ${2:value}
