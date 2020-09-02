@@ -71,6 +71,10 @@
     "prefix": "desc",
     "body": "describe('${1:description}', () => {\n\t${0}\n})"
   },
+  "describe top level": {
+    "prefix": "dt",
+    "body": "describe('${TM_FILENAME_BASE}', () => {\n\t${0}\n})"
+  },
   "it asynchronous": {
     "prefix": "it",
     "body": "it('${1:description}', async () => {\n\t${0}\n})"

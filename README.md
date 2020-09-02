@@ -678,6 +678,14 @@ describe('${1:description}', function () {
 })
 ```
 
+#### `dt` describe top level
+
+```js
+describe('${TM_FILENAME_BASE}', function () {
+  ${0}
+})
+```
+
 #### `it⇥` asynchronous "it"
 
 ```js
