@@ -121,7 +121,7 @@ if (${1:condition}) {
 ${1:cond} ? ${2:true} : ${3: false}
 ```
 
-#### `ta⇥` ternary statement
+#### `ta⇥` ternary assignment
 
 ```js
 const ${0} = ${1:cond} ? ${2:true} : ${3: false}
