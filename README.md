@@ -270,28 +270,12 @@ async (${1:arguments}) => {
 
 #### `aiife⇥` async immediately-invoked function expression
 
+very useful when you don't have top level await(node 16 and lower) 
+
 ```js
 ;(async (${1:arguments}) => {
   ${0}
 })(${2})
-```
-
-#### `fa⇥` function apply
-
-```js
-${1:fn}.apply(${2:this}, ${3:arguments})
-```
-
-#### `fc⇥` function call
-
-```js
-${1:fn}.call(${2:this}, ${3:arguments})
-```
-
-#### `fb⇥` function bind
-
-```js
-${1:fn}.bind(${2:this}, ${3:arguments})
 ```
 
 #### `af⇥` arrow function (ES6)
