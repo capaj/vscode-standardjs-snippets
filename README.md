@@ -270,7 +270,7 @@ async (${1:arguments}) => {
 
 #### `aiife⇥` async immediately-invoked function expression
 
-very useful when you don't have top level await(node 16 and lower) 
+very useful when you don't have top level await(node 16 and lower)
 
 ```js
 ;(async (${1:arguments}) => {
@@ -282,6 +282,12 @@ very useful when you don't have top level await(node 16 and lower)
 
 ```js
 (${1:arguments}) => ${2:statement}
+```
+
+#### `afi⇥` arrow function identity
+
+```js
+;(v) => v
 ```
 
 #### `fd⇥` arrow function with destructuring
@@ -310,6 +316,14 @@ very useful when you don't have top level await(node 16 and lower)
 (${1:arguments}) => {
   return ${0}
 }
+```
+
+#### `fro⇥` arrow function with single returned object
+
+```js
+(${1:arguments}) => ({
+  ${0}
+})
 ```
 
 #### `gf⇥` generator function (ES6)
@@ -344,6 +358,12 @@ ${1:iterable}.forEach((${2:item}) => {
 ${1:iterable}.map((${2:item}) => {
   ${0}
 })
+```
+
+#### `mapsd⇥` map single desctructured argument
+
+```js
+${1:iterable}.map((${2:item}) => ${2:item})
 ```
 
 #### `reduce⇥` reduce function
@@ -915,7 +935,6 @@ ${1:emitter}.on('${2:event}', (${3:arguments}) => {
 
 ```js
 'use strict'
-
 ```
 
 #### `js⇥` JSON Stringify
@@ -1055,39 +1074,3 @@ There are also snippets to be triggered with a text selection(trigger via insert
 ```
 jsx element wrap selection
 ```
-
-The following table lists all the snippets that can be used for prop types.
-Every snippet regarding prop types begins with `pt` so it's easy to group it all together and explore all the available options.
-On top of that each prop type snippets has one equivalent when we need to declare that this property is also required.
-For example `pta` creates the `PropTypes.array` and `ptar` creates the `PropTypes.array.isRequired`
-
-| Trigger | Content                                                                              |
-| ------- | ------------------------------------------------------------------------------------ |
-| `pta`   | `PropTypes.array,`                                                                   |
-| `ptar`  | `PropTypes.array.isRequired,`                                                        |
-| `ptb`   | `PropTypes.bool,`                                                                    |
-| `ptbr`  | `PropTypes.bool.isRequired,`                                                         |
-| `ptf`   | `PropTypes.func,`                                                                    |
-| `ptfr`  | `PropTypes.func.isRequired,`                                                         |
-| `ptn`   | `PropTypes.number,`                                                                  |
-| `ptnr`  | `PropTypes.number.isRequired,`                                                       |
-| `pto`   | `PropTypes.object.,`                                                                 |
-| `ptor`  | `PropTypes.object.isRequired,`                                                       |
-| `pts`   | `PropTypes.string,`                                                                  |
-| `ptsr`  | `PropTypes.string.isRequired,`                                                       |
-| `ptnd`  | `PropTypes.node,`                                                                    |
-| `ptndr` | `PropTypes.node.isRequired,`                                                         |
-| `ptel`  | `PropTypes.element,`                                                                 |
-| `ptelr` | `PropTypes.element.isRequired,`                                                      |
-| `pti`   | `PropTypes.instanceOf(ClassName),`                                                   |
-| `ptir`  | `PropTypes.instanceOf(ClassName).isRequired,`                                        |
-| `pte`   | `PropTypes.oneOf(['News', 'Photos']),`                                               |
-| `pter`  | `PropTypes.oneOf(['News', 'Photos']).isRequired,`                                    |
-| `ptet`  | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]),`                         |
-| `ptetr` | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,`              |
-| `ptao`  | `PropTypes.arrayOf(PropTypes.number),`                                               |
-| `ptaor` | `PropTypes.arrayOf(PropTypes.number).isRequired,`                                    |
-| `ptoo`  | `PropTypes.objectOf(PropTypes.number),`                                              |
-| `ptoor` | `PropTypes.objectOf(PropTypes.number).isRequired,`                                   |
-| `ptsh`  | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),`            |
-| `ptshr` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |

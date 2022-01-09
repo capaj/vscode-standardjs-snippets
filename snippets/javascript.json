@@ -215,6 +215,10 @@
     "prefix": "map",
     "body": "${1:iterable}.map((${2:item}) => {\n\t${0}\n})"
   },
+  "map single desctructured argument": {
+    "prefix": "mapsd",
+    "body": "${1:iterable}.map(({${2:item}}) => ${2:item})"
+  },
   "reduce": {
     "prefix": "reduce",
     "body": "${1:iterable}.reduce((${2:previous}, ${3:current}) => {\n\t${0}\n}${4:, initial})"
@@ -336,7 +340,7 @@
     "body": "import ${2:*} as ${3:name} from '${1:module}'"
   },
   "import module destructured": {
-    "prefix": "id",
+    "prefix": "imd",
     "body": "import {$2} from '${1:module}'"
   },
   "typeof": {
@@ -438,6 +442,10 @@
   "arrow function": {
     "prefix": "af",
     "body": "(${1:arguments}) => ${2:statement}"
+  },
+  "identity arrow function": {
+    "prefix": "afi",
+    "body": "(v) => v"
   },
   "arrow function with destructuring": {
     "prefix": "fd",
