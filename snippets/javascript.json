@@ -459,6 +459,10 @@
     "prefix": "f",
     "body": "(${1:arguments}) => {\n\t${0}\n}"
   },
+  "arrow function returning single object": {
+    "prefix": "fro",
+    "body": "(${1:arguments}) => ({\n\t${0}\n})"
+  },
   "arrow function with return": {
     "prefix": "fr",
     "body": "(${1:arguments}) => {\n\treturn ${0}\n}"
