@@ -648,7 +648,7 @@ export default function ${1:name} (${2:arguments}) {\n\t${0}\n}
 export const ${1:member} = ${2:value}
 ```
 
-#### `ef⇥` module export const
+#### `ef⇥` module export function
 
 ```js
 export function ${1:member} (${2:arguments}) {\n\t${0}\n}
